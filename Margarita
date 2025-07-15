@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Margarita Pearle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #faddba;
+      font-family: 'Inter', sans-serif;
+      color: #000;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-black">
+    <div class="text-sm">Contact</div>
+    <h1 class="text-4xl font-bold tracking-widest">MARGARITA PEARLE</h1>
+    <div class="text-sm">
+      <a href="tel:0480399162" class="hover:underline">Phone: 0480 399 162</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="text-center border-b border-black py-2 uppercase text-sm font-semibold tracking-wider">
+    <a href="#" class="mx-4 hover:underline">About</a>
+    <a href="#" class="mx-4 hover:underline">Gallery</a>
+    <a href="#" class="mx-4 hover:underline">Rates</a>
+    <a href="#" class="mx-4 hover:underline">Bookings</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4">
+    <h2 class="text-5xl mb-6">Luxury Companionship in Sydney</h2>
+    <p class="text-lg max-w-2xl mx-auto">I offer bespoke experiences for respectful, sophisticated clientele seeking quality time and genuine connection.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="px-6 py-16 border-t border-black">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Margarita</h2>
+      <p class="text-lg">
+        I adore sensual connection, and creating unforgettable moments. I tailor every encounter to your comfort and chemistry.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="px-6 py-16">
+    <h2 class="text-3xl text-center mb-10">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="DSC07399_optimized_1000.jpg" class="w-full object-cover" alt="Margarita in mirror – soft morning look">
+      <img src="photo2.jpg" class="w-full object-cover" alt="Photo 2">
+      <img src="000004490028 (1).jpg" class="w-full object-cover" alt="Photo 3">
+      <img src="bed4.jpg" class="w-full object-cover" alt="Photo 4">
+    </div>
+  </section>
+
+  <!-- Rates Section -->
+  <section class="text-center px-6 py-20 border-t border-black">
+    <h2 class="text-3xl mb-8">Rates</h2>
+
+    <p class="italic mb-6 text-base max-w-2xl mx-auto">
+      I offer two styles of engagement: <strong>Incall</strong> (you visit me at a private, discreet location) and <strong>Outcall</strong> (I visit you at a high-class hotel only).
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-12 text-left max-w-4xl mx-auto text-lg">
+      <!-- Incall Rates -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4 border-b border-black pb-1">Incall</h3>
+        <div class="space-y-3">
+          <div class="flex justify-between">
+            <span>1 hour</span>
+            <span>AUD $800 / USD ~$530</span>
+          </div>
+          <div class="flex justify-between">
+            <span>2 hours</span>
+            <span>AUD $1600 / USD ~$1060</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Overnight</span>
+            <span>AUD $7000 / USD ~$4630</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outcall Rates -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4 border-b border-black pb-1">Outcall<br><span class="text-sm font-normal italic">(High-class hotels only)</span></h3>
+        <div class="space-y-3">
+          <div class="flex justify-between">
+            <span>1 hour</span>
+            <span>AUD $1000 / USD ~$660</span>
+          </div>
+          <div class="flex justify-between">
+            <span>2 hours</span>
+            <span>AUD $2000 / USD ~$1320</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Overnight</span>
+            <span>AUD $9000 / USD ~$5960</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deposit & Payment Info -->
+    <div class="mt-12 max-w-2xl mx-auto text-base leading-relaxed">
+      <h3 class="text-xl font-semibold mb-3">Deposits & Payments</h3>
+      <p>
+        A non-refundable deposit is required to confirm all bookings — including for returning clients. 
+      </p>
+      <ul class="list-disc list-inside my-4">
+        <li>AUD $300 for 1-hour bookings</li>
+        <li>AUD $600 for 2-hour bookings</li>
+        <li>AUD $1000 for any overnight bookings</li>
+      </ul>
+      <p>
+        Deposits can be made via <strong>BeemIt</strong>, <strong>PayID</strong>, <strong>Crypto</strong>, <strong>EFT</strong>, or <strong>Wise</strong> (international or USD-based clientele).
+      </p>
+
+      <h3 class="text-xl font-semibold mt-10 mb-3">Client Screening</h3>
+      <p>
+        Clients may be subject to discreet screening. Not all inquiries will receive a response — I kindly request your message be respectful, well-composed, and sincere.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="text-center py-16 px-4">
+    <h2 class="text-3xl mb-6">Book a Date</h2>
+    <p class="mb-4">To make an inquiry, please introduce yourself with courtesy and clarity.</p>
+    <p class="text-lg mb-2"><strong>Email:</strong> <a href="mailto:margarita_pearle@outlook.com" class="underline">margarita_pearle@outlook.com</a></p>
+    <p class="text-lg"><strong>Phone:</strong> <a href="tel:0480399162" class="underline">0480 399 162</a></p>
+  </section>
+
+  <!-- Etiquette & Boundaries -->
+  <section class="px-6 py-16">
+    <h3 class="text-xl font-semibold mb-3">Etiquette & Boundaries</h3>
+    <p class="mb-4">
+      Please understand that I do <strong>not</strong> offer any unprotected services under any circumstance. This includes any form of skin-to-skin intimate contact without protection.
+    </p>
+    <p class="mb-4">
+      My health, safety, and boundaries are non-negotiable. I ask that you approach our time together with the same respect and care that I extend to you. If it is your preference, a moment shared over coffee or a beverage within the timeframe of the incall or outcall is offered and encouraged as an interlude to our private time.
+    </p>
+    <p>
+      Never assume any specific act is included. All experiences are centered on mutual comfort and connection, and unfold naturally within the boundaries I’ve defined. I appreciate your understanding and discretion.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 border-t border-black">
+    &copy; 2025 Margarita Pearle – All rights reserved. Based in Sydney, Australia.
+  </footer>
+
+</body>
+</html>
+
