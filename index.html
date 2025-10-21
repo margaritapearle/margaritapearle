@@ -5,15 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Margarita Pearle — Luxury Companionship in Sydney</title>
   <meta name="description" content="Margarita Pearle — discreet, luxury companionship in Sydney and on tour. Refined encounters tailored to respectful, sophisticated clientele." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Headings: Cormorant Garamond | Body: Spectral -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💎</text></svg>">
   <style>
-    :root { --pearl:#faddba; --ink:#000; }
-    body { background-color:#fff; font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans'; color:var(--ink); }
-    h1,h2,h3 { font-family:'Cormorant Garamond','Playfair Display',serif; letter-spacing:.6px; font-feature-settings:"liga" 1,"kern" 1; }
+    :root { --pearl:#faddba; --ink:#0c0c0c; }
+    body {
+      background-color:#fff;
+      color:var(--ink);
+      font-family:'Spectral', Georgia, 'Times New Roman', serif;
+      font-size:17px;
+      line-height:1.65;
+    }
+    h1,h2,h3,h4 {
+      font-family:'Cormorant Garamond','Times New Roman',serif;
+      letter-spacing:0.02em;
+    }
+    .masthead { letter-spacing:.25em; }
     a { outline-offset:2px; }
   </style>
 
@@ -54,7 +70,7 @@
   <!-- ===== Magazine Header ===== -->
   <header class="bg-white text-black">
     <!-- Top utility -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between text-[0.95rem]">
       <div class="flex items-center gap-3">
         <a href="#book" class="hover:underline">Contact</a>
         <span class="inline-flex items-center gap-3">
@@ -62,9 +78,6 @@
         </span>
       </div>
       <div class="flex items-center gap-4">
-        <button aria-label="Search" class="p-2 hover:opacity-70">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20.3l-4.3-4.3a7.5 7.5 0 1 0-1.7 1.7L20.3 22 21 20.3zM10.5 17a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/></svg>
-        </button>
         <a href="#book" class="rounded-full border border-black px-3 py-1 hover:bg-black hover:text-white transition">Book</a>
       </div>
     </div>
@@ -72,14 +85,14 @@
     <!-- Big centered logo -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center">
       <a href="#" class="inline-block">
-        <span class="font-black tracking-[0.25em] text-4xl sm:text-5xl" style="font-family:'Cormorant Garamond','Playfair Display',serif;">MARGARITA&nbsp;PEARLE</span>
+        <span class="masthead font-black text-4xl sm:text-5xl" style="font-family:'Cormorant Garamond',serif;">MARGARITA&nbsp;PEARLE</span>
       </a>
     </div>
 
     <!-- Slim category nav -->
     <nav class="border-y border-black/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.95rem] tracking-wide">
+        <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.98rem] tracking-wide">
           <li><a href="#about" class="py-3 inline-block hover:underline">ABOUT</a></li>
           <li><a href="#gallery" class="py-3 inline-block hover:underline">GALLERY</a></li>
           <li><a href="#reviews" class="py-3 inline-block hover:underline">REVIEWS</a></li>
@@ -109,7 +122,7 @@
     <!-- About -->
     <section id="about" class="px-6 py-16 border-t border-black/10">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">About Margarita</h2>
+        <h2 class="text-3xl font-semibold mb-6">About Margarita</h2>
         <p class="text-lg leading-relaxed">Welcome. If you’re seeking more than just company, you’re in the right place. With me, you’ll find warmth, intelligence, elegance, and ease. Whether an afternoon escape or a few quiet hours tucked away from the world, every moment we share is curated with intention and care. I don’t just offer time — I offer an experience: genuine, unrushed, and sensual.</p>
         <p class="text-lg leading-relaxed mt-6">I’m naturally curious and love thoughtful conversation — especially on <strong>science</strong> and <strong>information technology</strong>. I’m also <strong>timely and punctual</strong>; your schedule is respected as much as mine.</p>
         <p class="text-lg leading-relaxed mt-6">Details of my exact incall location and discreet entry arrangements are provided prior to your booking. If there’s a particular suburb you’d prefer I host from, please ask — I operate from multiple incall locations.</p>
@@ -222,6 +235,7 @@
       <div class="mt-12 max-w-2xl mx-auto text-base leading-relaxed text-left">
         <h3 class="text-xl font-semibold mb-3">Deposits & Payments</h3>
         <p><strong>Deposits are required to secure all bookings and are not refunded.</strong> For discretion and speed, I welcome <strong>cryptocurrency</strong> (Bitcoin), <strong>Beem It</strong>, and <strong>Smart ATM (cardless cash)</strong>, along with <strong>PayID</strong>, <strong>OSKO</strong>, <strong>EFT</strong>, <strong>Wise</strong>, and <strong>gift cards</strong> (by prior agreement).</p>
+        <p class="mt-2"><em>Discretion note:</em> Smart ATM deposits appear on your banking activity as a <strong>cash withdrawal</strong> you initiated (no recipient name displayed).</p>
 
         <ul class="list-disc list-inside my-4 space-y-1">
           <li>30 minutes &amp; 1 hour: <strong>AUD $300 deposit</strong></li>
@@ -290,7 +304,8 @@
               <li>Receive a secure code/reference (and sometimes an SMS PIN).</li>
               <li>Share the code and amount with me; I redeem it at the nominated Smart ATM.</li>
             </ol>
-            <p>No names appear on a transfer, making this method discreet. Treat the code like cash; only share it with me.</p>
+            <p><strong>Discretion:</strong> there are no names on this transfer. Treat the code like cash and share it only with me.</p>
+            <p><strong>Statement appearance:</strong> usually shows as a <em>cash withdrawal</em> you performed at the nominated ATM (no recipient name).</p>
           </div>
         </details>
 
@@ -305,7 +320,7 @@
             <ul class="list-disc list-inside space-y-1">
               <li>Bookings between <strong>10pm–6am</strong>: +<strong>AUD $200</strong></li>
               <li>Outcalls with travel exceeding <strong>30 minutes each way</strong>: +<strong>AUD $200</strong></li>
-              <li>Touring rates may differ from Sydney, Newcastle, and Wollongong.</li>
+              <li><strong>Touring rates are the same</strong> as standard rates.</li>
             </ul>
           </div>
         </div>
@@ -320,7 +335,13 @@
     <section id="tours" class="px-6 py-16 border-t border-black/10">
       <div class="max-w-3xl mx-auto text-left rounded-xl border border-black/20 bg-white/60 p-5">
         <h3 class="text-xl font-semibold mb-2">Touring</h3>
-        <p class="leading-relaxed">Tours to <strong>Melbourne</strong>, <strong>Brisbane</strong>, <strong>Townsville</strong>, and <strong>the Gold Coast</strong> attract adjusted tour rates and have a <strong>minimum booking time of 1.5 hours</strong>. <strong>Any date with at least one confirmed pre-booking will be honoured</strong>; dates without pre-bookings may be subject to modification.</p>
+        <p class="leading-relaxed">
+          <strong>Touring rates remain the same</strong> as my standard rates (see <a href="#rates" class="underline">Rates</a>).
+          A <strong>minimum booking time of 1.5 hours</strong> generally applies while on tour; however,
+          <strong>select shorter bookings may be accepted</strong> at my discretion.
+          <strong>Any date with at least one confirmed pre-booking will be honoured</strong>;
+          dates without pre-bookings may be subject to modification.
+        </p>
 
         <h4 class="text-lg font-semibold mt-4 mb-2">Upcoming Tour Dates</h4>
         <div class="overflow-x-auto">
@@ -356,16 +377,6 @@
             </tbody>
           </table>
         </div>
-
-        <h4 class="text-lg font-semibold mt-6 mb-2">Touring Rates</h4>
-        <ul class="list-disc list-inside mt-1 space-y-1">
-          <li><strong>1 hour:</strong> AUD $1,600</li>
-          <li><strong>1.5 hours:</strong> AUD $1,900</li>
-          <li><strong>2 hours:</strong> AUD $2,000</li>
-          <li><strong>3 hours:</strong> AUD $3,000</li>
-          <li><strong>Additional hours:</strong> AUD $900</li>
-        </ul>
-        <p class="mt-3"><em>FMTY (Fly Me To You):</em> Enquire for travel and extended arrangements.</p>
       </div>
     </section>
 
@@ -494,5 +505,3 @@
   </script>
 </body>
 </html>
-
-
