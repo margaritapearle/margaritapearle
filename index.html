@@ -81,7 +81,7 @@
 
     <!-- Big centered logo -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center">
-      <a href="#" class="inline-block">
+      <a href="#menu" class="inline-block">
         <span class="masthead font-black text-4xl sm:text-5xl" style="font-family:'Cormorant Garamond',serif;">MARGARITA&nbsp;PEARLE</span>
       </a>
     </div>
@@ -90,6 +90,7 @@
     <nav class="border-y border-black/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.98rem] tracking-wide">
+          <li><a href="#menu" class="py-3 inline-block hover:underline">HOME</a></li>
           <li><a href="#about" class="py-3 inline-block hover:underline">ABOUT</a></li>
           <li><a href="#gallery" class="py-3 inline-block hover:underline">GALLERY</a></li>
           <li><a href="#reviews" class="py-3 inline-block hover:underline">REVIEWS</a></li>
@@ -103,8 +104,73 @@
     </nav>
   </header>
 
+  <!-- ===== MAIN MENU LANDING ===== -->
+  <section id="menu" class="bg-white border-b border-black/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 text-center md:text-left">
+        <p class="uppercase tracking-[0.3em] text-xs mb-3">Sydney • Australia</p>
+        <h1 class="text-4xl md:text-5xl font-semibold mb-4">Luxury companionship<br class="hidden md:inline" /> for the discerning few.</h1>
+        <p class="text-lg leading-relaxed mb-6">
+          Begin with what matters most to you — a quiet introduction, a closer look at my gallery,
+          or a clear overview of rates and bookings.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+          <a href="#about" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
+            Read about Margarita
+          </a>
+          <a href="#rates" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
+            View rates
+          </a>
+          <a href="#book" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
+            Book a date
+          </a>
+        </div>
+      </div>
+
+      <div class="md:w-1/2">
+        <div class="grid grid-cols-2 gap-3">
+          <a href="#gallery" class="group rounded-2xl border border-black/10 p-4 bg-[var(--pearl)]/20 hover:bg-[var(--pearl)]/40 transition flex flex-col justify-between min-h-[140px]">
+            <div>
+              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70">Explore</p>
+              <h3 class="text-xl font-semibold mb-1">Gallery</h3>
+              <p class="text-sm opacity-85">A small selection of recent editorial images.</p>
+            </div>
+            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; View images</span>
+          </a>
+
+          <a href="#reviews" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-black hover:text-white transition flex flex-col justify-between min-h-[140px]">
+            <div>
+              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70 group-hover:opacity-80">Reputation</p>
+              <h3 class="text-xl font-semibold mb-1">Reviews</h3>
+              <p class="text-sm opacity-85 group-hover:opacity-90">A few words from those who have met me.</p>
+            </div>
+            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; Read reviews</span>
+          </a>
+
+          <a href="#tours" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-[var(--pearl)]/30 transition flex flex-col justify-between min-h-[140px]">
+            <div>
+              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70">Travel</p>
+              <h3 class="text-xl font-semibold mb-1">Tours</h3>
+              <p class="text-sm opacity-85">Cities I visit and how touring dates work.</p>
+            </div>
+            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; Touring info</span>
+          </a>
+
+          <a href="#etiquette" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-black hover:text-white transition flex flex-col justify-between min-h-[140px]">
+            <div>
+              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70 group-hover:opacity-80">Read first</p>
+              <h3 class="text-xl font-semibold mb-1">Etiquette</h3>
+              <p class="text-sm opacity-85 group-hover:opacity-90">How I work, and how to make the most of our time.</p>
+            </div>
+            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; View etiquette</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Magazine Hero (two tiles) ===== -->
-  <section class="bg-white">
+  <section id="hero" class="bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 md:grid-cols-2 gap-4">
       <figure class="aspect-[16/9] overflow-hidden">
         <img src="DSC07399_optimized_1000.jpg" alt="Margarita - editorial set" class="w-full h-full object-cover">
@@ -539,7 +605,5 @@
   </script>
 </body>
 </html>
-
-      
         
     
