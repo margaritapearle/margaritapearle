@@ -41,8 +41,7 @@
 
     h1,
     h2,
-    h3,
-    .serif {
+    h3 {
       font-family: "Cormorant Garamond", Georgia, serif;
       font-weight: 400;
     }
@@ -52,7 +51,8 @@
       text-decoration: none;
     }
 
-    img {
+    img,
+    video {
       display: block;
       width: 100%;
     }
@@ -263,11 +263,6 @@
       color: #fff;
     }
 
-    .tours .section-title,
-    .tours .section-label {
-      color: #fff;
-    }
-
     .tour-intro {
       max-width: 800px;
       margin: 0 auto 55px;
@@ -455,6 +450,40 @@
 
 
     /* =========================
+       EDITORIAL MEDIA
+    ========================= */
+
+    .media-section {
+      padding: 0;
+      background: #fff;
+    }
+
+    .media-item {
+      margin: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .media-item img,
+    .media-item video {
+      width: 100%;
+      height: 82vh;
+      min-height: 600px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .media-divider {
+      padding: 28px 20px;
+      text-align: center;
+      background: #fff;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 26px;
+      letter-spacing: .04em;
+    }
+
+
+    /* =========================
        CONTACT
     ========================= */
 
@@ -563,6 +592,16 @@
       .deposit-grid {
         grid-template-columns: 1fr;
         gap: 50px;
+      }
+
+      .media-section {
+        padding: 0;
+      }
+
+      .media-item img,
+      .media-item video {
+        height: 68vh;
+        min-height: 480px;
       }
 
       .footer-brand {
@@ -1214,6 +1253,88 @@
     </section>
 
 
+    <!-- ======================================================
+         EDITORIAL MEDIA STRING
+    ====================================================== -->
+
+    <section class="media-section">
+
+      <!-- PHOTO -->
+      <figure class="media-item">
+
+        <img
+          src="IMG_4544.jpeg"
+          alt="Margarita Pearle"
+          loading="lazy"
+        >
+
+      </figure>
+
+
+      <!-- VIDEO -->
+      <figure class="media-item">
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="IMG_4329.mov"
+            type="video/quicktime"
+          >
+        </video>
+
+      </figure>
+
+
+      <!-- PHOTO -->
+      <figure class="media-item">
+
+        <img
+          src="IMG_6055.jpeg"
+          alt="Margarita Pearle touring"
+          loading="lazy"
+        >
+
+      </figure>
+
+
+      <!-- VIDEO -->
+      <figure class="media-item">
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="IMG_4468.mov"
+            type="video/quicktime"
+          >
+        </video>
+
+      </figure>
+
+
+      <!-- PHOTO -->
+      <figure class="media-item">
+
+        <img
+          src="IMG_6064.jpeg"
+          alt="Regional touring"
+          loading="lazy"
+        >
+
+      </figure>
+
+    </section>
+
+
     <!-- CONTACT -->
 
     <section id="contact" class="contact-section">
@@ -1261,6 +1382,7 @@
     </div>
 
   </footer>
+
 
 </body>
 </html>
