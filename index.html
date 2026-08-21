@@ -3,620 +3,1396 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Margarita Pearle - Luxury Companionship in Sydney</title>
-  <meta name="description" content="Margarita Pearle - discreet, luxury companionship in Sydney and on tour. Refined encounters tailored to respectful, sophisticated clientele." />
+
+  <title>Margarita Pearle - Sydney & Regional NSW</title>
+
+  <meta
+    name="description"
+    content="Margarita Pearle - discreet luxury companionship in Sydney, Newcastle, Wollongong and regional NSW."
+  />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Headings: Cormorant Garamond | Body: Spectral -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💎</text></svg>">
   <style>
-    :root { --pearl:#faddba; --ink:#0c0c0c; }
-    body {
-      background-color:#fff;
-      color:var(--ink);
-      font-family:'Spectral', Georgia, 'Times New Roman', serif;
-      font-size:17px;
-      line-height:1.65;
+    :root {
+      --ink: #0b0b0b;
+      --cream: #f7f2eb;
+      --pearl: #f3e8da;
+      --soft: #f8f8f6;
     }
-    h1,h2,h3,h4 {
-      font-family:'Cormorant Garamond','Times New Roman',serif;
-      letter-spacing:0.02em;
-    }
-    .masthead { letter-spacing:.25em; }
-    a { outline-offset:2px; }
-  </style>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Margarita Pearle - Luxury Companionship in Sydney" />
-  <meta property="og:description" content="Refined, bespoke experiences for respectful, sophisticated clientele." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-cover.jpg" />
-  <meta property="og:url" content="https://margaritapearle.github.io" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Margarita Pearle - Luxury Companionship">
-  <meta name="twitter:description" content="Discreet, elegant companionship in Sydney and on tour.">
-  <meta name="twitter:image" content="/og-cover.jpg">
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Margarita Pearle",
-    "telephone": "+61 480 399 162",
-    "areaServed": "Sydney, Australia",
-    "image": "/og-cover.jpg",
-    "url": "https://margaritapearle.github.io",
-    "sameAs": ["https://x.com/pearlemarg"]
-  }
-  </script>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: 'Spectral', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: 0.02em;
+    }
+
+    .masthead {
+      letter-spacing: .24em;
+    }
+
+    .editorial-rule {
+      border-top: 1px solid rgba(0,0,0,.18);
+    }
+
+    .tour-scroll {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .tour-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tour-card {
+      min-width: 285px;
+    }
+
+    .photo-frame img {
+      transition: transform .5s ease;
+    }
+
+    .photo-frame:hover img {
+      transform: scale(1.015);
+    }
+
+    .tour-placeholder {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,0,0,.03),
+          rgba(0,0,0,.09)
+        );
+    }
+  </style>
 </head>
+
+
 <body class="min-h-screen selection:bg-black selection:text-white">
-  <!-- Announcement Bar (Tours) -->
-  <div class="bg-black text-white text-sm text-center py-2">
-    Touring: please refer to my current advertisements or enquire directly for upcoming cities and dates.
+
+
+  <!-- ======================================================
+       TOUR ANNOUNCEMENT
+       ====================================================== -->
+
+  <div class="bg-black text-white text-center text-xs sm:text-sm py-2 px-4 tracking-wide">
+    REGIONAL NSW TOURING • ADVANCE BOOKINGS HIGHLY RECOMMENDED
   </div>
 
-  <!-- ===== Magazine Header ===== -->
-  <header class="bg-white text-black">
-    <!-- Top utility -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between text-[0.95rem]">
-      <div class="flex items-center gap-3">
-        <a href="#book" class="hover:underline">Contact</a>
-        <span class="inline-flex items-center gap-3">
-          <a href="https://x.com/pearlemarg" target="_blank" rel="noopener" class="hover:underline">@pearlemarg</a>
-        </span>
-      </div>
-      <div class="flex items-center gap-4">
-        <a href="#book" class="rounded-full border border-black px-3 py-1 hover:bg-black hover:text-white transition">Book</a>
-      </div>
-    </div>
 
-    <!-- Big centered logo -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center">
-      <a href="#menu" class="inline-block">
-        <span class="masthead font-black text-4xl sm:text-5xl" style="font-family:'Cormorant Garamond',serif;">MARGARITA&nbsp;PEARLE</span>
+  <!-- ======================================================
+       HEADER
+       ====================================================== -->
+
+  <header class="bg-white">
+
+    <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center text-sm">
+
+      <div class="flex gap-5">
+        <a href="#booking" class="hover:underline">
+          Contact
+        </a>
+
+        <a
+          href="https://x.com/pearlemarg"
+          target="_blank"
+          rel="noopener"
+          class="hover:underline"
+        >
+          @pearlemarg
+        </a>
+      </div>
+
+      <a
+        href="#booking"
+        class="border border-black rounded-full px-5 py-1.5 hover:bg-black hover:text-white transition"
+      >
+        Book
       </a>
+
     </div>
 
-    <!-- Slim category nav -->
-    <nav class="border-y border-black/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.98rem] tracking-wide">
-          <li><a href="#menu" class="py-3 inline-block hover:underline">HOME</a></li>
-          <li><a href="#about" class="py-3 inline-block hover:underline">ABOUT</a></li>
-          <li><a href="#gallery" class="py-3 inline-block hover:underline">GALLERY</a></li>
-          <li><a href="#reviews" class="py-3 inline-block hover:underline">REVIEWS</a></li>
-          <li><a href="#rates" class="py-3 inline-block hover:underline">RATES</a></li>
-          <li><a href="#book" class="py-3 inline-block hover:underline">BOOKINGS</a></li>
-          <li><a href="#tours" class="py-3 inline-block hover:underline">TOURS</a></li>
-          <li><a href="#etiquette" class="py-3 inline-block hover:underline">ETIQUETTE</a></li>
-          <li><a href="#faq" class="py-3 inline-block hover:underline">FAQ</a></li>
+
+    <div class="max-w-7xl mx-auto px-4 py-7 text-center">
+
+      <a href="#home">
+        <span
+          class="masthead font-semibold text-4xl sm:text-5xl md:text-6xl"
+          style="font-family:'Cormorant Garamond',serif;"
+        >
+          MARGARITA&nbsp;PEARLE
+        </span>
+      </a>
+
+    </div>
+
+
+    <nav class="border-y border-black/15">
+
+      <div class="max-w-7xl mx-auto px-3">
+
+        <ul class="flex flex-wrap justify-center gap-x-8 text-sm tracking-[0.12em]">
+
+          <li>
+            <a href="#home" class="py-4 inline-block hover:underline">
+              HOME
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="py-4 inline-block hover:underline">
+              ABOUT
+            </a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="py-4 inline-block hover:underline">
+              GALLERY
+            </a>
+          </li>
+
+          <li>
+            <a href="#tours" class="py-4 inline-block hover:underline">
+              TOURS
+            </a>
+          </li>
+
+          <li>
+            <a href="#rates" class="py-4 inline-block hover:underline">
+              RATES
+            </a>
+          </li>
+
+          <li>
+            <a href="#deposits" class="py-4 inline-block hover:underline">
+              DEPOSITS
+            </a>
+          </li>
+
+          <li>
+            <a href="#booking" class="py-4 inline-block hover:underline">
+              BOOKINGS
+            </a>
+          </li>
+
+          <li>
+            <a href="#etiquette" class="py-4 inline-block hover:underline">
+              ETIQUETTE
+            </a>
+          </li>
+
+          <li>
+            <a href="#faq" class="py-4 inline-block hover:underline">
+              FAQ
+            </a>
+          </li>
+
         </ul>
+
       </div>
+
     </nav>
+
   </header>
 
-  <!-- ===== MAIN MENU LANDING ===== -->
-  <section id="menu" class="bg-white border-b border-black/10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
-      <div class="md:w-1/2 text-center md:text-left">
-        <p class="uppercase tracking-[0.3em] text-xs mb-3">Sydney • Australia</p>
-        <h1 class="text-4xl md:text-5xl font-semibold mb-4">
-          Luxury companionship<br class="hidden md:inline" /> for the discerning few.
-        </h1>
-        <p class="text-lg leading-relaxed mb-6">
-          Begin with what matters most to you — a quiet introduction, a closer look at my gallery,
-          or a clear overview of rates and bookings.
-        </p>
-        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
-          <a href="#about" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
-            Read about Margarita
-          </a>
-          <a href="#rates" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
-            View rates
-          </a>
-          <a href="#book" class="rounded-full border border-black px-5 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">
-            Book a date
-          </a>
+
+
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
+
+  <main>
+
+    <section
+      id="home"
+      class="max-w-7xl mx-auto px-6 py-16 md:py-24"
+    >
+
+      <div class="grid md:grid-cols-2 gap-12 items-end">
+
+        <div>
+
+          <p class="text-xs tracking-[0.35em] uppercase mb-5">
+            Sydney • Newcastle • Wollongong • Regional NSW
+          </p>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl leading-[0.95] font-semibold mb-7">
+            Refined companionship,
+            <br>
+            wherever we meet.
+          </h1>
+
+          <p class="text-lg max-w-xl leading-relaxed mb-8">
+            A private, unhurried experience centred around discretion,
+            natural chemistry and quality time.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+
+            <a
+              href="#tours"
+              class="border border-black px-6 py-2.5 hover:bg-black hover:text-white transition"
+            >
+              View tours
+            </a>
+
+            <a
+              href="#rates"
+              class="border border-black px-6 py-2.5 hover:bg-black hover:text-white transition"
+            >
+              View rates
+            </a>
+
+            <a
+              href="#booking"
+              class="bg-black text-white border border-black px-6 py-2.5"
+            >
+              Book a date
+            </a>
+
+          </div>
+
         </div>
+
+
+        <div class="text-sm leading-relaxed md:text-right">
+
+          <p class="uppercase tracking-[0.25em] text-xs mb-3">
+            Currently touring
+          </p>
+
+          <p>
+            I regularly travel throughout Sydney, Newcastle,
+            Wollongong and regional NSW, including the Hunter,
+            Illawarra, Central West and surrounding regional areas.
+          </p>
+
+        </div>
+
       </div>
 
-      <div class="md:w-1/2">
-        <div class="grid grid-cols-2 gap-3">
-          <a href="#gallery" class="group rounded-2xl border border-black/10 p-4 bg-[var(--pearl)]/20 hover:bg-[var(--pearl)]/40 transition flex flex-col justify-between min-h-[140px]">
-            <div>
-              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70">Explore</p>
-              <h3 class="text-xl font-semibold mb-1">Gallery</h3>
-              <p class="text-sm opacity-85">A small selection of recent editorial images.</p>
-            </div>
-            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; View images</span>
-          </a>
+    </section>
 
-          <a href="#reviews" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-black hover:text-white transition flex flex-col justify-between min-h-[140px]">
-            <div>
-              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70 group-hover:opacity-80">Reputation</p>
-              <h3 class="text-xl font-semibold mb-1">Reviews</h3>
-              <p class="text-sm opacity-85 group-hover:opacity-90">A few words from those who have met me.</p>
-            </div>
-            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; Read reviews</span>
-          </a>
 
-          <a href="#tours" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-[var(--pearl)]/30 transition flex flex-col justify-between min-h-[140px]">
-            <div>
-              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70">Travel</p>
-              <h3 class="text-xl font-semibold mb-1">Tours</h3>
-              <p class="text-sm opacity-85">Cities I visit and how touring dates work.</p>
-            </div>
-            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; Touring info</span>
-          </a>
 
-          <a href="#etiquette" class="group rounded-2xl border border-black/10 p-4 bg-white hover:bg-black hover:text-white transition flex flex-col justify-between min-h-[140px]">
-            <div>
-              <p class="text-xs uppercase tracking-[0.2em] mb-2 opacity-70 group-hover:opacity-80">Read first</p>
-              <h3 class="text-xl font-semibold mb-1">Etiquette</h3>
-              <p class="text-sm opacity-85 group-hover:opacity-90">How I work, and how to make the most of our time.</p>
-            </div>
-            <span class="mt-3 text-xs tracking-[0.2em] uppercase group-hover:translate-x-1 transition">&rarr; View etiquette</span>
-          </a>
-        </div>
+    <!-- ======================================================
+         TWO MAIN PHOTOS
+         ====================================================== -->
+
+    <section
+      id="gallery"
+      class="border-t border-black/15 px-5 py-8"
+    >
+
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-5">
+
+        <figure class="photo-frame aspect-[16/10] overflow-hidden">
+          <img
+            src="DSC07399_optimized_1000.jpg"
+            alt="Margarita Pearle"
+            class="w-full h-full object-cover"
+          >
+        </figure>
+
+        <figure class="photo-frame aspect-[16/10] overflow-hidden">
+          <img
+            src="bed4.jpg"
+            alt="Margarita Pearle"
+            class="w-full h-full object-cover"
+          >
+        </figure>
+
       </div>
-    </div>
-  </section>
 
-  <!-- ===== Magazine Hero (two tiles) ===== -->
-  <section id="hero" class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <figure class="aspect-[16/9] overflow-hidden">
-        <img src="DSC07399_optimized_1000.jpg" alt="Margarita - editorial set" class="w-full h-full object-cover">
-      </figure>
-      <figure class="aspect-[16/9] overflow-hidden">
-        <img src="bed4.jpg" alt="Editorial portrait" class="w-full h-full object-cover">
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <main id="main">
-    <!-- About -->
-    <section id="about" class="px-6 py-16 border-t border-black/10">
+
+
+    <!-- ======================================================
+         ABOUT
+         ====================================================== -->
+
+    <section
+      id="about"
+      class="border-t border-black/15 px-6 py-20"
+    >
+
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-6">About Margarita</h2>
+
+        <p class="text-xs uppercase tracking-[0.3em] mb-4">
+          Introduction
+        </p>
+
+        <h2 class="text-4xl md:text-5xl mb-8">
+          About Margarita
+        </h2>
+
         <p class="text-lg leading-relaxed">
-          Welcome. If you are seeking an encounter defined by discretion, elegance, and genuine connection, you will find it here. I offer a refined, unhurried experience created for those who appreciate quality, emotional intelligence, and a naturally sensual presence. Time with me is private, intentional, and deeply relaxing. It is an escape crafted for those who expect the very best.
+          I offer a refined and unhurried experience for those who
+          appreciate natural chemistry, emotional intelligence and
+          quality companionship.
         </p>
+
         <p class="text-lg leading-relaxed mt-6">
-          My style of companionship is calm, attentive, and sensual. I prefer a slower pace, with time to talk, exhale, and let chemistry unfold naturally, rather than rush through a checklist.
+          My style is calm, attentive and naturally sensual.
+          I prefer a slower pace, allowing conversation, comfort
+          and chemistry to unfold naturally.
         </p>
+
         <p class="text-lg leading-relaxed mt-6">
-          I am naturally curious and enjoy thoughtful conversation, especially on science and information technology. I am timely and punctual; your schedule is respected as much as mine.
+          I am naturally curious and particularly enjoy thoughtful
+          conversation surrounding science, technology, travel
+          and the world around us.
         </p>
+
         <p class="text-lg leading-relaxed mt-6">
-          My incall locations are selected for comfort, privacy, and quiet luxury. Exact addresses and discreet entry arrangements are provided once your booking is confirmed. I host primarily from premium hotels and high-end apartments in the Sydney CBD, with select availability in the Lower North Shore, Eastern Suburbs, and Western Sydney. If there is a particular suburb you prefer, please ask.
+          Discretion is carefully considered when selecting my
+          in-call locations, particularly throughout regional and
+          rural areas. Accommodation is selected with privacy,
+          comfort and discreet access as priorities.
         </p>
-        <p class="text-base opacity-90 mt-6">
-          I like low lighting, fresh linen, and a room that feels calm and unhurried. Everything else can be simple.
+
+        <p class="mt-6">
+          I warmly welcome respectful clients of all genders.
         </p>
-        <p class="text-base opacity-90 mt-4">I warmly welcome respectful clients of all genders.</p>
+
       </div>
+
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="px-6 py-16">
-      <h2 class="text-3xl text-center mb-10">Gallery</h2>
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-        <figure class="aspect-[3/4] overflow-hidden rounded-xl shadow-sm">
-          <img loading="lazy" src="DSC07399_optimized_1000.jpg" class="w-full h-full object-cover" alt="Margarita in a mirror, soft morning look" />
-        </figure>
-        <figure class="aspect-[3/4] overflow-hidden rounded-xl shadow-sm">
-          <img loading="lazy" src="photo2.jpg" class="w-full h-full object-cover" alt="Elegant portrait, evening light" />
-        </figure>
-        <figure class="aspect-[3/4] overflow-hidden rounded-xl shadow-sm">
-          <img loading="lazy" src="000004490028 (1).jpg" class="w-full h-full object-cover" alt="Film still, timeless allure" />
-        </figure>
-        <figure class="aspect-[3/4] overflow-hidden rounded-xl shadow-sm">
-          <img loading="lazy" src="bed4.jpg" class="w-full h-full object-cover" alt="Soft linens, intimate ambiance" />
-        </figure>
-      </div>
-    </section>
 
-    <!-- Reviews -->
-    <section id="reviews" class="px-6 py-16 border-t border-black/10">
-      <h2 class="text-3xl text-center mb-10">Reviews</h2>
-      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"It was an absolute pleasure to meet Margarita and I would highly recommend her - she is very enjoyable to be with."</p>
-          <footer class="mt-3 text-sm opacity-80">- Declan</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"Lovely to meet a beautiful lady for sure!"</p>
-          <footer class="mt-3 text-sm opacity-80">- Jinzhao</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"I caught up with Margarita whilst she was in Newcastle - wow, what a beauty! She is sexy, a wonderful time, and a treat to be around. I would highly recommend; her presence is not fully captured in her photos - she has an ethereal quality and is truly beautiful."</p>
-          <footer class="mt-3 text-sm opacity-80">- Stevie</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"Margarita offers truly exquisite, high-quality company; she possesses a beautiful physique and an ethereal enigma. The conversation was effortless and the time spent under the sheets was memorable."</p>
-          <footer class="mt-3 text-sm opacity-80">- Trent</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed md:col-span-2">
-          <p>"I was not really sure what to expect, yet Margarita blew me away with her class and realness. Bless and best wishes, Margarita."</p>
-          <footer class="mt-3 text-sm opacity-80">- William M</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"Thank you, Margarita! She certainly is beautiful and a delight to be around. I felt comfortable and very well attended to - and I must say, she is undeniably sexy and attractive; you will not be disappointed."</p>
-          <footer class="mt-3 text-sm opacity-80">- Troy Douglas</footer>
-        </blockquote>
-        <blockquote class="rounded-2xl border border-black/20 bg-white/60 p-5 leading-relaxed">
-          <p>"I look forward to treating myself to Margarita's company again - and I suggest you do as well."</p>
-          <footer class="mt-3 text-sm opacity-80">- Jack</footer>
-        </blockquote>
-      </div>
-    </section>
 
-    <!-- Rates -->
-    <section id="rates" class="text-center px-6 py-20 border-t border-black/10 bg-[var(--pearl)]/30">
-      <h2 class="text-3xl mb-8">Rates</h2>
-      <div class="max-w-4xl mx-auto text-base mb-6">
-        <p class="italic">
-          The rates below apply to my regular Sydney engagements. I offer two styles of engagement: <strong>Incall</strong> (a private, discreet location) and <strong>Outcall</strong> (high-class hotels only). Touring rates are set separately and confirmed on my current advertisements or upon enquiry.
-        </p>
-      </div>
+    <!-- ======================================================
+         ROLLING TOUR DATES
+         ====================================================== -->
 
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 text-left text-lg">
-        <!-- Incall -->
-        <div>
-          <h3 class="text-xl font-semibold mb-4 border-b border-black pb-1">Incall</h3>
-          <ul class="divide-y divide-black/20">
-            <li class="flex items-center justify-between py-3"><span>1 hour</span><span>AUD $900</span></li>
-            <li class="flex items-center justify-between py-3"><span>2 hours</span><span>AUD $1,800</span></li>
-            <li class="flex items-center justify-between py-3"><span>3 hours</span><span>AUD $2,700</span></li>
-            <li class="flex items-center justify-between py-3"><span>Additional hours</span><span>AUD $800</span></li>
-            <li class="flex items-center justify-between py-3"><span>Couples (2 hours)</span><span>AUD $1,800</span></li>
-            <li class="flex items-center justify-between py-3"><span>Overnight (12 hours)</span><span>AUD $6,000</span></li>
-            <li class="flex items-center justify-between py-3"><span>Full day (24 hours)</span><span>AUD $9,000</span></li>
-          </ul>
-        </div>
+    <section
+      id="tours"
+      class="bg-black text-white py-16 overflow-hidden"
+    >
 
-        <!-- Outcall -->
-        <div>
-          <h3 class="text-xl font-semibold mb-4 border-b border-black pb-1">
-            Outcall <span class="block text-sm font-normal italic">(high-class hotels only)</span>
-          </h3>
-          <ul class="divide-y divide-black/20">
-            <li class="flex items-center justify-between py-3"><span>1 hour</span><span>AUD $900</span></li>
-            <li class="flex items-center justify-between py-3"><span>2 hours</span><span>AUD $1,800</span></li>
-            <li class="flex items-center justify-between py-3"><span>3 hours</span><span>AUD $2,700</span></li>
-            <li class="flex items-center justify-between py-3"><span>Additional hours</span><span>AUD $800</span></li>
-            <li class="flex items-center justify-between py-3"><span>Couples (2 hours)</span><span>AUD $1,800</span></li>
-            <li class="flex items-center justify-between py-3"><span>Overnight (12 hours)</span><span>AUD $6,000</span></li>
-            <li class="flex items-center justify-between py-3"><span>Full day (24 hours)</span><span>AUD $9,000</span></li>
-          </ul>
-        </div>
-      </div>
+      <div class="max-w-7xl mx-auto px-6">
 
-      <!-- Video calls -->
-      <div class="mt-6 max-w-2xl mx-auto text-base leading-relaxed">
-        <p>Video introductions via WhatsApp are available by prior arrangement:</p>
-        <ul class="list-disc list-inside my-2 space-y-1 text-left">
-          <li>5-minute video call: <strong>AUD $150</strong></li>
-          <li>10-minute video call: <strong>AUD $200</strong></li>
-          <li>15-minute video call: <strong>AUD $250</strong></li>
-        </ul>
-        <p class="mt-3">
-          <em>Fetish or kink-oriented video calls incur an additional</em>
-          <strong>+AUD $100</strong> on the above rates.
-        </p>
-      </div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-10">
 
-      <!-- Date concepts -->
-      <div class="mt-12 max-w-4xl mx-auto text-left">
-        <h3 class="text-xl font-semibold mb-3">Date concepts</h3>
-        <div class="grid md:grid-cols-2 gap-6 text-[0.98rem] leading-relaxed">
-          <div class="rounded-xl border border-black/15 bg-white/70 p-4">
-            <h4 class="font-semibold mb-1">City interlude - 2 hours</h4>
-            <p>A quiet pocket of time carved out of a busy week. Drinks, conversation, and a private retreat upstairs when the moment feels right.</p>
-          </div>
-          <div class="rounded-xl border border-black/15 bg-white/70 p-4">
-            <h4 class="font-semibold mb-1">Slow evening - 3 hours</h4>
-            <p>Space to arrive, unwind, talk, and let the pace drop. Ideal if you like to linger and enjoy the build rather than rush.</p>
-          </div>
-          <div class="rounded-xl border border-black/15 bg-white/70 p-4">
-            <h4 class="font-semibold mb-1">Stolen night - 12 hours</h4>
-            <p>An overnight escape with time for dinner, long conversation in bed, and the quiet pleasure of waking up together with no alarm.</p>
-          </div>
-          <div class="rounded-xl border border-black/15 bg-white/70 p-4">
-            <h4 class="font-semibold mb-1">A day to disappear - 24 hours</h4>
-            <p>A full day and night to disappear from your usual world. Sleep in, order room service, explore the city or never leave the sheets at all.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Deposits & Payment Info -->
-      <div class="mt-12 max-w-2xl mx-auto text-base leading-relaxed text-left">
-        <h3 class="text-xl font-semibold mb-3">Deposits and payments</h3>
-        <p>
-          <strong>Deposits are required to secure all bookings and are not refunded.</strong>
-          For discretion and speed, I welcome cryptocurrency (Bitcoin), Beem It, and Smart ATM (cardless cash), along with PayID, OSKO, EFT, Wise, and gift cards by prior agreement.
-        </p>
-        <p class="mt-2">
-          <em>Discretion note:</em> Smart ATM deposits appear on your banking activity as a cash withdrawal you initiated, with no recipient name displayed.
-        </p>
-
-        <ul class="list-disc list-inside my-4 space-y-1">
-          <li>1 hour: <strong>AUD $300 deposit</strong></li>
-          <li>2 hours: <strong>AUD $600 deposit</strong></li>
-          <li>
-            <strong>Tours:</strong> <strong>AUD $900 deposit</strong> for bookings with a 2 hour minimum in most cases.
-            Any date with at least one confirmed pre-booking will be honoured; dates without pre-bookings may be subject to modification.
-          </li>
-        </ul>
-
-        <p class="mb-4">
-          The remaining balance is paid in cash at the beginning of our time together. For shorter bookings, I may accept an alternative method at my discretion.
-        </p>
-
-        <h4 class="text-lg font-semibold mb-2">Accepted deposit methods</h4>
-        <ul class="list-disc list-inside space-y-1">
-          <li><strong>Crypto</strong> (Bitcoin) - discreet and fast</li>
-          <li><strong>Smart ATM</strong> (cardless cash withdrawal)</li>
-          <li><strong>Beem It</strong> - instant between supported banks</li>
-          <li><strong>PayID</strong> / <strong>OSKO</strong> / <strong>EFT</strong></li>
-          <li><strong>Wise</strong> - ideal for international or card-funded transfers</li>
-          <li>
-            <strong>Gift cards</strong> (by prior agreement) - can be purchased with cash at Australia Post for discretion.
-            Consider a
-            <a href="https://card.gift/product/digital-mastercard/configure/?cardType=digital&cardValue=500" target="_blank" rel="noopener" class="underline">Digital Mastercard via Card.Gift</a>.
-          </li>
-        </ul>
-
-        <!-- Beem It -->
-        <details class="mt-4 rounded-xl border border-black/20 bg-white/60 p-4">
-          <summary class="cursor-pointer font-semibold">
-            How to pay a deposit with Beem It
-            <span class="ml-2 text-sm opacity-70">(instant and discreet)</span>
-          </summary>
-          <div class="mt-2 space-y-2 text-[0.975rem] leading-relaxed">
-            <p>Download or open <a href="https://www.beemit.com.au/" target="_blank" rel="noopener" class="underline">Beem It</a>, then:</p>
-            <ol class="list-decimal list-inside space-y-1">
-              <li>Tap "Pay" and enter the deposit amount.</li>
-              <li>Use the handle or details I provide in our messages.</li>
-              <li>Add the note I supply (for example, booking date and time) and confirm.</li>
-            </ol>
-            <p>Transfers are typically instant and show a generic description in banking activity.</p>
-          </div>
-        </details>
-
-        <!-- Wise -->
-        <details class="mt-4 rounded-xl border border-black/20 bg-white/60 p-4">
-          <summary class="cursor-pointer font-semibold">How to pay a deposit with Wise</summary>
-          <div class="mt-2 space-y-2 text-[0.975rem] leading-relaxed">
-            <p>Wise is ideal for fast bank transfers and international clients. Visit <a href="https://wise.com/" target="_blank" rel="noopener" class="underline">wise.com</a> or use the Wise app.</p>
-            <ol class="list-decimal list-inside space-y-1">
-              <li>Add a new recipient using the account details I provide.</li>
-              <li>Enter the exact deposit amount and your booking note (date and time).</li>
-              <li>Choose your funding method (bank transfer or card) and confirm.</li>
-            </ol>
-            <p>Wise shows minimal reference text and provides a receipt once complete.</p>
-          </div>
-        </details>
-
-        <!-- Smart ATM -->
-        <details class="mt-4 rounded-xl border border-black/20 bg-white/60 p-4">
-          <summary class="cursor-pointer font-semibold">How Smart ATM (cardless cash) works</summary>
-          <div class="mt-2 space-y-2 text-[0.975rem] leading-relaxed">
-            <p>A Smart ATM allows a one-time, code-based cash withdrawal created in your banking app. I will nominate a withdrawal location and a collection window.</p>
-            <ol class="list-decimal list-inside space-y-1">
-              <li>In your banking app, generate a cardless cash withdrawal for the deposit amount.</li>
-              <li>Receive a secure code or reference (and sometimes an SMS PIN).</li>
-              <li>Share the code and amount with me; I redeem it at the nominated Smart ATM.</li>
-            </ol>
-            <p><strong>Discretion:</strong> there are no names on this transfer. Treat the code like cash and share it only with me.</p>
-            <p><strong>Statement appearance:</strong> usually shows as a cash withdrawal you performed at the nominated ATM, with no recipient name.</p>
-          </div>
-        </details>
-
-        <!-- Practicalities -->
-        <div class="mt-8 grid md:grid-cols-2 gap-6 text-left">
           <div>
-            <h4 class="text-lg font-semibold mb-2">Incall locations</h4>
-            <p>
-              I host at four and five star hotels or upscale apartments in the Sydney CBD, and at times in the Lower North Shore, Eastern Suburbs, and Western Sydney. If you require a specific suburb or location, please enquire.
+
+            <p class="text-xs uppercase tracking-[0.35em] opacity-70 mb-3">
+              Travel diary
             </p>
+
+            <h2 class="text-4xl md:text-5xl">
+              Upcoming Tours
+            </h2>
+
           </div>
-          <div>
-            <h4 class="text-lg font-semibold mb-2">Surcharges</h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Bookings between 10 pm and 6 am: +<strong>AUD $200</strong></li>
-              <li>Outcalls with travel exceeding 30 minutes each way: +<strong>AUD $200</strong></li>
-              <li>Touring rates are set separately to reflect travel and availability. Please refer to my current tour advertisement for exact pricing.</li>
-            </ul>
-          </div>
+
+          <p class="max-w-lg text-sm leading-relaxed opacity-80">
+            Arrival and departure times indicate my approximate
+            availability window within each location.
+          </p>
+
         </div>
 
-        <h3 class="text-xl font-semibold mt-10 mb-3">Client screening</h3>
-        <p>
-          For safety and compatibility, discreet screening may apply. Kindly provide your name, preferred date and time, duration, incall or outcall, hotel name or suburb, and any notes. Clear, respectful enquiries receive priority.
-        </p>
+
+        <!--
+        ======================================================
+        EDIT THESE TOUR CARDS WHEN YOU KNOW YOUR DATES
+        ======================================================
+        -->
+
+
+        <div
+          id="tourScroller"
+          class="tour-scroll flex gap-4 overflow-x-auto pb-5"
+        >
+
+
+          <!-- TAMWORTH -->
+
+          <article
+            class="tour-card border border-white/30 bg-white text-black p-6"
+          >
+
+            <p class="text-xs tracking-[0.25em] uppercase mb-3">
+              Regional NSW
+            </p>
+
+            <h3 class="text-3xl mb-5">
+              Tamworth
+            </h3>
+
+            <div class="editorial-rule pt-4 text-sm space-y-2">
+
+              <div class="flex justify-between gap-5">
+                <span>Dates</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Arrival</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Departure</span>
+                <strong>TBC</strong>
+              </div>
+
+            </div>
+
+            <a
+              href="#booking"
+              class="inline-block mt-6 text-xs tracking-[0.2em] uppercase border-b border-black"
+            >
+              Enquire →
+            </a>
+
+          </article>
+
+
+
+          <!-- NEWCASTLE -->
+
+          <article
+            class="tour-card border border-white/30 bg-white text-black p-6"
+          >
+
+            <p class="text-xs tracking-[0.25em] uppercase mb-3">
+              Hunter
+            </p>
+
+            <h3 class="text-3xl mb-5">
+              Newcastle
+            </h3>
+
+            <div class="editorial-rule pt-4 text-sm space-y-2">
+
+              <div class="flex justify-between gap-5">
+                <span>Dates</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Arrival</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Departure</span>
+                <strong>TBC</strong>
+              </div>
+
+            </div>
+
+            <a
+              href="#booking"
+              class="inline-block mt-6 text-xs tracking-[0.2em] uppercase border-b border-black"
+            >
+              Enquire →
+            </a>
+
+          </article>
+
+
+
+          <!-- MUDGEE -->
+
+          <article
+            class="tour-card border border-white/30 bg-white text-black p-6"
+          >
+
+            <p class="text-xs tracking-[0.25em] uppercase mb-3">
+              Central West
+            </p>
+
+            <h3 class="text-3xl mb-5">
+              Mudgee
+            </h3>
+
+            <div class="editorial-rule pt-4 text-sm space-y-2">
+
+              <div class="flex justify-between gap-5">
+                <span>Dates</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Arrival</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Departure</span>
+                <strong>TBC</strong>
+              </div>
+
+            </div>
+
+            <a
+              href="#booking"
+              class="inline-block mt-6 text-xs tracking-[0.2em] uppercase border-b border-black"
+            >
+              Enquire →
+            </a>
+
+          </article>
+
+
+
+          <!-- ORANGE -->
+
+          <article
+            class="tour-card border border-white/30 bg-white text-black p-6"
+          >
+
+            <p class="text-xs tracking-[0.25em] uppercase mb-3">
+              Central West
+            </p>
+
+            <h3 class="text-3xl mb-5">
+              Orange
+            </h3>
+
+            <div class="editorial-rule pt-4 text-sm space-y-2">
+
+              <div class="flex justify-between gap-5">
+                <span>Dates</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Arrival</span>
+                <strong>TBC</strong>
+              </div>
+
+              <div class="flex justify-between gap-5">
+                <span>Departure</span>
+                <strong>TBC</strong>
+              </div>
+
+            </div>
+
+            <a
+              href="#booking"
+              class="inline-block mt-6 text-xs tracking-[0.2em] uppercase border-b border-black"
+            >
+              Enquire →
+            </a>
+
+          </article>
+
+
+        </div>
+
+
+        <div class="mt-8 max-w-4xl text-sm leading-relaxed opacity-85">
+
+          <p>
+            Regional tours most frequently take place
+            <strong>Tuesday–Thursday</strong>, with selected dates
+            extending into the weekend. Sunday–Monday arrivals may
+            also be scheduled depending on location and demand.
+          </p>
+
+          <p class="mt-4">
+            As my time in each touring location is limited,
+            <strong>advance bookings are highly recommended.</strong>
+            Due to demand, appointments between approximately
+            <strong>3:30 PM and 12:00 AM</strong> are often the first
+            to become unavailable and should be secured well in advance.
+          </p>
+
+          <p class="mt-4">
+            <strong>Dawn and early-morning appointments</strong> can
+            also be arranged with sufficient advance notice,
+            particularly for clients whose working schedules make
+            conventional hours difficult.
+          </p>
+
+          <p class="mt-4">
+            <strong>
+              Tour dates with confirmed pre-bookings are always honoured,
+              irrespective of overall enquiry volume.
+            </strong>
+            Tour dates without pre-bookings remain subject to
+            modification or cancellation.
+          </p>
+
+        </div>
+
       </div>
-      <p class="text-xs opacity-80 mt-10">Currency conversions vary. AUD is definitive.</p>
+
     </section>
 
-    <!-- Touring -->
-    <section id="tours" class="px-6 py-16 border-t border-black/10">
-      <div class="max-w-3xl mx-auto text-left">
-        <h3 class="text-xl font-semibold mb-3 tracking-[0.15em] uppercase">Touring</h3>
 
-        <p class="leading-relaxed mb-4">
-          I travel regularly to selected Australian cities. Touring rates are set independently from my Sydney rates and may vary to reflect travel, accommodation, and availability. Exact pricing is always listed on my current touring advertisements or can be confirmed via enquiry.
+
+    <!-- ======================================================
+         TOURING GALLERY PLACEHOLDERS
+         ====================================================== -->
+
+    <section class="px-6 py-20">
+
+      <div class="max-w-7xl mx-auto">
+
+        <div class="flex items-end justify-between gap-8 mb-10">
+
+          <div>
+
+            <p class="text-xs uppercase tracking-[0.35em] mb-3">
+              On the road
+            </p>
+
+            <h2 class="text-4xl md:text-5xl">
+              Touring Journal
+            </h2>
+
+          </div>
+
+          <p class="hidden md:block max-w-md text-sm">
+            Selected moments from Newcastle, the Hunter,
+            Central West and regional NSW.
+          </p>
+
+        </div>
+
+
+        <!--
+        THESE ARE PLACEHOLDERS.
+        WE WILL REPLACE THEM WITH YOUR REAL TOUR PHOTOS.
+        -->
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+          <div class="tour-placeholder aspect-[4/3] flex items-end p-5">
+            <div>
+              <p class="text-xs tracking-[0.25em] uppercase">
+                Regional NSW
+              </p>
+              <h3 class="text-2xl mt-1">
+                Tamworth
+              </h3>
+            </div>
+          </div>
+
+          <div class="tour-placeholder aspect-[4/3] flex items-end p-5">
+            <div>
+              <p class="text-xs tracking-[0.25em] uppercase">
+                Coast
+              </p>
+              <h3 class="text-2xl mt-1">
+                Newcastle
+              </h3>
+            </div>
+          </div>
+
+          <div class="tour-placeholder aspect-[4/3] flex items-end p-5">
+            <div>
+              <p class="text-xs tracking-[0.25em] uppercase">
+                Central West
+              </p>
+              <h3 class="text-2xl mt-1">
+                On Tour
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         RATES
+         ====================================================== -->
+
+    <section
+      id="rates"
+      class="bg-[var(--cream)] border-y border-black/15 px-6 py-20"
+    >
+
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center max-w-3xl mx-auto mb-14">
+
+          <p class="text-xs uppercase tracking-[0.3em] mb-4">
+            Arrangements
+          </p>
+
+          <h2 class="text-4xl md:text-5xl mb-5">
+            Rates
+          </h2>
+
+          <p class="italic">
+            The rates below apply to my regular Sydney engagements.
+            Touring rates are confirmed separately according to
+            location, travel and availability.
+          </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-12 text-lg">
+
+
+          <!-- INCALL -->
+
+          <div>
+
+            <h3 class="text-2xl border-b border-black pb-3 mb-2">
+              Incall
+            </h3>
+
+            <ul class="divide-y divide-black/20">
+
+              <li class="flex justify-between py-4">
+                <span>1 hour</span>
+                <strong>AUD $900</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>2 hours</span>
+                <strong>AUD $1,800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>3 hours</span>
+                <strong>AUD $2,700</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Additional hours</span>
+                <strong>AUD $800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Couples · 2 hours</span>
+                <strong>AUD $1,800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Overnight · 12 hours</span>
+                <strong>AUD $6,000</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Full day · 24 hours</span>
+                <strong>AUD $9,000</strong>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+          <!-- OUTCALL -->
+
+          <div>
+
+            <h3 class="text-2xl border-b border-black pb-3 mb-2">
+              Outcall
+              <span class="block text-sm italic font-normal mt-1">
+                Selected hotels and locations
+              </span>
+            </h3>
+
+            <ul class="divide-y divide-black/20">
+
+              <li class="flex justify-between py-4">
+                <span>1 hour</span>
+                <strong>AUD $900</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>2 hours</span>
+                <strong>AUD $1,800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>3 hours</span>
+                <strong>AUD $2,700</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Additional hours</span>
+                <strong>AUD $800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Couples · 2 hours</span>
+                <strong>AUD $1,800</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Overnight · 12 hours</span>
+                <strong>AUD $6,000</strong>
+              </li>
+
+              <li class="flex justify-between py-4">
+                <span>Full day · 24 hours</span>
+                <strong>AUD $9,000</strong>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <div class="max-w-3xl mx-auto mt-12 text-center text-sm">
+
+          <p>
+            Bookings commencing between
+            <strong>10:00 PM and 6:00 AM</strong>
+            incur a late-hours fee.
+            Extended travel may also incur an additional travel fee
+            depending on distance and location.
+          </p>
+
+          <p class="mt-4">
+            <strong>
+              Advertised rates are firm.
+              Discounts are not offered for repeat bookings
+              or returning clients.
+            </strong>
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         DEPOSITS
+         ====================================================== -->
+
+    <section
+      id="deposits"
+      class="px-6 py-20"
+    >
+
+      <div class="max-w-5xl mx-auto">
+
+        <div class="grid md:grid-cols-[1fr_1.4fr] gap-12">
+
+
+          <div>
+
+            <p class="text-xs uppercase tracking-[0.3em] mb-4">
+              Booking security
+            </p>
+
+            <h2 class="text-4xl md:text-5xl leading-tight">
+              Deposits &
+              <br>
+              Payments
+            </h2>
+
+          </div>
+
+
+
+          <div>
+
+            <p class="text-lg leading-relaxed">
+              <strong>
+                A deposit is required to secure all bookings
+                and is non-negotiable.
+              </strong>
+              Deposits help confirm genuine and committed bookings,
+              support my personal safety and security, and contribute
+              towards the operational costs involved in arranging
+              and reserving your appointment.
+            </p>
+
+
+            <div class="mt-8 border-y border-black py-5">
+
+              <div class="flex justify-between py-2">
+                <span>1–2 hour engagements</span>
+                <strong>$300–$600</strong>
+              </div>
+
+              <div class="flex justify-between py-2">
+                <span>3+ hour engagements</span>
+                <strong>$600+</strong>
+              </div>
+
+              <div class="flex justify-between py-2">
+                <span>Interstate touring</span>
+                <strong>$300–$600+</strong>
+              </div>
+
+              <div class="flex justify-between py-2">
+                <span>Overnight arrangements</span>
+                <strong>Confirmed on enquiry</strong>
+              </div>
+
+            </div>
+
+
+            <p class="mt-7">
+              The remaining balance is settled discreetly
+              <strong>in cash upon meeting</strong>.
+              Please ensure sufficient cash is available for any
+              agreed extensions or additional charges.
+            </p>
+
+
+            <p class="mt-6">
+              Accepted deposit methods may include
+              <strong>
+                PayID, OSKO, EFT, Wise, Smart ATM/cardless cash
+                and other methods by prior agreement.
+              </strong>
+            </p>
+
+
+            <div class="mt-8 bg-[var(--soft)] border border-black/15 p-6">
+
+              <h3 class="text-xl mb-3">
+                Payment policy
+              </h3>
+
+              <p>
+                All agreed booking fees are payable in full.
+                Withholding, reversing, disputing or attempting to
+                recover an agreed payment after a booking has taken
+                place will result in active recovery of any amount owing.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         BOOKING
+         ====================================================== -->
+
+    <section
+      id="booking"
+      class="bg-black text-white px-6 py-20"
+    >
+
+      <div class="max-w-5xl mx-auto">
+
+        <div class="grid md:grid-cols-2 gap-14">
+
+
+          <div>
+
+            <p class="text-xs uppercase tracking-[0.3em] opacity-70 mb-4">
+              Contact
+            </p>
+
+            <h2 class="text-4xl md:text-5xl mb-7">
+              Arrange a booking
+            </h2>
+
+            <p class="leading-relaxed">
+              I respond to
+              <strong>text messages, WhatsApp and email.</strong>
+              The quickest way to reach me is via
+              <strong>text message.</strong>
+            </p>
+
+
+            <div class="mt-8">
+
+              <p>
+                <strong>Email</strong>
+              </p>
+
+              <a
+                href="mailto:margarita_pearle@outlook.com"
+                class="underline"
+              >
+                margarita_pearle@outlook.com
+              </a>
+
+            </div>
+
+
+            <div class="mt-5">
+
+              <p>
+                <strong>SMS / WhatsApp</strong>
+              </p>
+
+              <a
+                href="sms:+61480399162"
+                class="underline"
+              >
+                0480 399 162
+              </a>
+
+            </div>
+
+
+            <p class="mt-8 text-sm opacity-80">
+              Please note that I do not take phone calls.
+            </p>
+
+          </div>
+
+
+
+          <div>
+
+            <p class="mb-5">
+              When making an enquiry, please include:
+            </p>
+
+            <ul class="space-y-2 mb-8">
+
+              <li><strong>Your name</strong></li>
+
+              <li><strong>Preferred date</strong></li>
+
+              <li><strong>Preferred time</strong></li>
+
+              <li><strong>Booking duration</strong></li>
+
+              <li><strong>In-call or outcall</strong></li>
+
+              <li><strong>Location / suburb / city</strong></li>
+
+              <li>
+                <strong>
+                  Outcall address, if applicable
+                </strong>
+              </li>
+
+            </ul>
+
+
+            <p class="text-sm opacity-80">
+              Providing these details in your initial message allows
+              me to check availability and respond as efficiently
+              as possible.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         SERVICES / ETIQUETTE
+         ====================================================== -->
+
+    <section
+      id="etiquette"
+      class="px-6 py-20"
+    >
+
+      <div class="max-w-4xl mx-auto">
+
+        <p class="text-xs uppercase tracking-[0.3em] mb-4 text-center">
+          Before we meet
         </p>
 
-        <p class="leading-relaxed">
-          Advance enquiries are welcome. A confirmed deposit secures priority, and any date with at least one pre-booking will be honoured. Cities or dates without confirmed bookings may see schedule adjustments.
-        </p>
+        <h2 class="text-4xl text-center mb-10">
+          Etiquette & Preferences
+        </h2>
+
+
+        <div class="space-y-6 leading-relaxed">
+
+          <p>
+            While I do not publish a comprehensive list of services,
+            I welcome respectful discussion regarding individual
+            preferences and requested inclusions.
+            I am a <strong>full-service companion</strong>.
+          </p>
+
+          <p>
+            If you have specific preferences that are important to
+            your booking, please mention these when enquiring and
+            I will confirm whether they can be accommodated.
+            <strong>
+              Any applicable additional charges will be advised
+              at the time of enquiry.
+            </strong>
+          </p>
+
+          <p>
+            Other preferences and details can otherwise be discussed
+            upon meeting where appropriate.
+          </p>
+
+          <p>
+            I value kindness, discretion, good hygiene and mutual
+            comfort. Please arrive freshly showered; facilities are
+            available at my in-call should you wish to refresh.
+          </p>
+
+          <p>
+            Your personal circumstances are private and respected.
+            This is a professional arrangement and discretion is
+            central to the experience.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Booking -->
-    <section id="book" class="text-center py-16 px-4">
-      <h2 class="text-3xl mb-6">Book a date</h2>
-      <p class="mb-4">
-        All enquiries are handled via text or email. Please introduce yourself courteously with your preferred date, duration, and location. I do not take phone calls.
-      </p>
-      <p class="mb-4">
-        A concise example: <em>"Good evening Margarita. My name is James. I am interested in arranging a two hour booking at your next suitable availability. My preference is early next week, although I am happy to adjust to your schedule. I am prepared to send the required deposit as soon as a time is confirmed. Thank you for your consideration."</em>
-      </p>
-      <p class="text-lg mb-2"><strong>Email:</strong> <a href="mailto:margarita_pearle@outlook.com" class="underline">margarita_pearle@outlook.com</a></p>
-      <p class="text-lg"><strong>SMS / WhatsApp:</strong> <a href="sms:+61480399162" class="underline">0480&nbsp;399&nbsp;162</a></p>
 
-      <!-- Mailto helper form (client-side only) -->
-      <form class="max-w-xl mx-auto mt-8 text-left" onsubmit="mailtoCompose(event)">
-        <label class="block text-sm font-semibold mb-1" for="name">Your name</label>
-        <input id="name" name="name" required class="w-full border border-black rounded-xl px-4 py-2 mb-4 bg-white/70" />
 
-        <label class="block text-sm font-semibold mb-1" for="when">Preferred date and time</label>
-        <input id="when" name="when" class="w-full border border-black rounded-xl px-4 py-2 mb-4 bg-white/70" placeholder="For example: Friday 7 pm" />
+    <!-- ======================================================
+         FAQ
+         ====================================================== -->
 
-        <label class="block text-sm font-semibold mb-1" for="duration">Duration</label>
-        <input id="duration" name="duration" class="w-full border border-black rounded-xl px-4 py-2 mb-4 bg-white/70" placeholder="For example: 2 hours, Overnight" />
+    <section
+      id="faq"
+      class="bg-[var(--cream)] border-y border-black/15 px-6 py-20"
+    >
 
-        <label class="block text-sm font-semibold mb-1" for="location">Location</label>
-        <input id="location" name="location" class="w-full border border-black rounded-xl px-4 py-2 mb-4 bg-white/70" placeholder="Hotel name (outcall) or suburb (incall)" />
+      <div class="max-w-3xl mx-auto">
 
-        <label class="block text-sm font-semibold mb-1" for="notes">Notes</label>
-        <textarea id="notes" name="notes" rows="4" class="w-full border border-black rounded-xl px-4 py-2 mb-6 bg-white/70" placeholder="Any preferences, requests, or questions"></textarea>
+        <h2 class="text-4xl text-center mb-10">
+          FAQ
+        </h2>
 
-        <!-- Honeypot -->
-        <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
-        <button class="inline-flex items-center justify-center rounded-2xl border border-black px-5 py-2 text-base font-semibold shadow-sm hover:shadow active:translate-y-[1px]">
-          Compose email
-        </button>
-        <p class="text-xs mt-2 opacity-80">No files are uploaded via this form. It simply opens your email client.</p>
-      </form>
-    </section>
+        <div class="divide-y divide-black/15">
 
-    <!-- Gifts -->
-    <section id="gifts" class="px-6 py-16 border-t border-black/10">
-      <h3 class="text-xl font-semibold mb-3 text-center">Gifts</h3>
-      <p class="max-w-2xl mx-auto text-center">
-        Never expected, always appreciated. If you wish to spoil me, I adore fragrances - surprise me.
-      </p>
-    </section>
 
-    <!-- Etiquette & Professionalism -->
-    <section id="etiquette" class="px-6 py-16 border-t border-black/10">
-      <h3 class="text-xl font-semibold mb-3">Etiquette and professionalism</h3>
-      <p class="mb-4">
-        I am a full-service companion; however, I ask that explicit service requests are not made prior to a booking. I do not provide detailed lists of inclusions, and messages of that nature will not receive a response. Each booking is shaped individually, with safety, hygiene, and mutual respect guiding the experience.
-      </p>
-      <p class="mb-4">
-        I value kindness, discretion, and mutual comfort. Please arrive freshly showered; a shower is available at my incall should you wish to refresh on arrival. I always practise safer intimacy and keep wellbeing at the forefront of our time together.
-      </p>
-      <p class="mb-4">
-        Whether or not you have a partner is of no relevance to me - this is a professional arrangement and your privacy is respected.
-      </p>
-      <p class="mb-4">
-        Clients who endeavour to solicit unpaid meetings may no longer be able to book me.
-      </p>
+          <details class="py-5">
 
-      <h3 class="text-xl font-semibold mt-8 mb-3">For women and couples</h3>
-      <p>
-        I warmly welcome women and couples who are curious, respectful, and open-minded. If this is your first time seeing a companion together, I am happy to set a gentle pace so that everyone feels comfortable and included.
-      </p>
-    </section>
+            <summary class="cursor-pointer font-semibold">
+              Are deposits required?
+            </summary>
 
-    <!-- FAQ -->
-    <section id="faq" class="px-6 py-16 border-t border-black/10">
-      <h2 class="text-3xl text-center mb-8">FAQ</h2>
-      <div class="max-w-3xl mx-auto divide-y divide-black/10">
-        <details class="py-4 group">
-          <summary class="cursor-pointer font-semibold flex justify-between">
-            Deposits and methods
-            <span class="opacity-60 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <div class="mt-2 text-[0.98rem] leading-relaxed">
-            Deposits are required to secure all bookings and are not refunded. Accepted methods include crypto (Bitcoin), Smart ATM (cardless cash), Beem It, PayID, OSKO, EFT, Wise, and gift cards by agreement. The remaining balance is paid in cash at the start of our time together.
-          </div>
-        </details>
-        <details class="py-4 group">
-          <summary class="cursor-pointer font-semibold flex justify-between">
-            Screening protocol
-            <span class="opacity-60 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <div class="mt-2 text-[0.98rem] leading-relaxed">
-            For safety and compatibility, please include your name, preferred date and time, duration, incall or outcall, hotel name or suburb, and any notes or preferences in your initial enquiry. Clear, respectful messages receive priority.
-          </div>
-        </details>
-        <details class="py-4 group">
-          <summary class="cursor-pointer font-semibold flex justify-between">
-            Discretion and privacy
-            <span class="opacity-60 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <div class="mt-2">
-            Discretion is central to my service. Exact incall details and entry instructions are provided after your deposit is received.
-          </div>
-        </details>
-        <details class="py-4 group">
-          <summary class="cursor-pointer font-semibold flex justify-between">
-            Cancellations
-            <span class="opacity-60 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <div class="mt-2 text-[0.98rem] leading-relaxed">
-            Deposits are strictly non-refundable in all circumstances, including change of mind, illness,
-            travel issues, or other personal reasons. If you choose to cancel or are unable to attend your
-            booking for any reason, your deposit is forfeited.
-            <br><br>
-            In rare cases, and entirely at my discretion, I may offer to apply a portion of your deposit toward
-            a future booking; however, this is not guaranteed and should not be expected.
-          </div>
-        </details>
+            <p class="mt-3">
+              Yes. A confirmation deposit is required to secure
+              every booking.
+            </p>
+
+          </details>
+
+
+
+          <details class="py-5">
+
+            <summary class="cursor-pointer font-semibold">
+              Are deposits refundable?
+            </summary>
+
+            <p class="mt-3">
+              Deposits are generally non-refundable where the client
+              cancels or is unable to attend. Any alternative
+              arrangement is entirely at my discretion.
+            </p>
+
+          </details>
+
+
+
+          <details class="py-5">
+
+            <summary class="cursor-pointer font-semibold">
+              How discreet are in-call locations?
+            </summary>
+
+            <p class="mt-3">
+              Discretion is carefully considered when selecting
+              accommodation and in-call locations, particularly
+              throughout regional and rural areas.
+              Exact details are provided once your booking is confirmed.
+            </p>
+
+          </details>
+
+
+
+          <details class="py-5">
+
+            <summary class="cursor-pointer font-semibold">
+              Will a regional tour be cancelled if demand is low?
+            </summary>
+
+            <p class="mt-3">
+              Tour dates with confirmed pre-bookings are always
+              honoured irrespective of overall enquiry volume.
+              Dates without confirmed pre-bookings remain subject
+              to modification.
+            </p>
+
+          </details>
+
+
+
+          <details class="py-5">
+
+            <summary class="cursor-pointer font-semibold">
+              Can I arrange an early-morning booking?
+            </summary>
+
+            <p class="mt-3">
+              Yes. Dawn and early-morning appointments can be arranged
+              with sufficient advance notice where availability permits.
+            </p>
+
+          </details>
+
+
+        </div>
+
       </div>
+
     </section>
+
+
+
   </main>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm py-8 border-t border-black/10">
-    <p>&copy; <span id="year"></span> Margarita Pearle - All rights reserved. Based in Sydney, Australia.</p>
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
+  <footer class="text-center text-sm py-10 px-4">
+
+    <p>
+      © <span id="year"></span>
+      Margarita Pearle • Sydney, Australia
+    </p>
+
   </footer>
 
-  <!-- Mobile Book Bar -->
+
+
+  <!-- MOBILE BOOK BUTTON -->
+
   <div class="fixed bottom-3 inset-x-3 z-50 md:hidden">
-    <a href="#book" class="block text-center rounded-full bg-black text-white py-3 shadow-lg">
+
+    <a
+      href="sms:+61480399162"
+      class="block bg-black text-white text-center py-3 rounded-full shadow-xl"
+    >
       Text to book • 0480 399 162
     </a>
+
   </div>
 
+
+
+  <!-- ======================================================
+       JAVASCRIPT
+       ====================================================== -->
+
   <script>
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Compose a well-structured email from the helper form
-    function mailtoCompose(e){
-      e.preventDefault();
-      const form = e.target;
-      if (form.website && form.website.value) return; // honeypot
-      const name = encodeURIComponent(form.name.value.trim());
-      const when = encodeURIComponent(form.when.value.trim());
-      const duration = encodeURIComponent(form.duration.value.trim());
-      const location = encodeURIComponent(form.location.value.trim());
-      const notes = encodeURIComponent(form.notes.value.trim());
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
 
-      const subjectRaw = name ? `Enquiry from ${decodeURIComponent(name)}` : "Enquiry";
-      const subject = encodeURIComponent(subjectRaw);
-      const body = `Hello Margarita,%0D%0A%0D%0AMy name is ${name}.%0D%0APreferred time: ${when}%0D%0ADuration: ${duration}%0D%0ALocation: ${location}%0D%0A%0D%0ANotes:%0D%0A${notes}%0D%0A%0D%0AThank you.`;
 
-      const href = `mailto:margarita_pearle@outlook.com?subject=${subject}&body=${body}`;
-      window.location.href = href;
+    /*
+    ----------------------------------------------------------
+    GENTLE AUTO-SCROLL FOR TOUR CARDS
+    Stops temporarily when the user interacts with the strip.
+    ----------------------------------------------------------
+    */
+
+    const scroller = document.getElementById("tourScroller");
+
+    let autoTourScroll = true;
+
+    function moveTourStrip() {
+
+      if (!autoTourScroll || !scroller) return;
+
+      if (
+        scroller.scrollLeft + scroller.clientWidth >=
+        scroller.scrollWidth - 5
+      ) {
+
+        scroller.scrollTo({
+          left: 0,
+          behavior: "smooth"
+        });
+
+      } else {
+
+        scroller.scrollBy({
+          left: 305,
+          behavior: "smooth"
+        });
+
+      }
+
     }
+
+
+    setInterval(moveTourStrip, 4500);
+
+
+    if (scroller) {
+
+      scroller.addEventListener("pointerdown", () => {
+
+        autoTourScroll = false;
+
+        setTimeout(() => {
+          autoTourScroll = true;
+        }, 12000);
+
+      });
+
+    }
+
   </script>
+
+
 </body>
 </html>
-    
