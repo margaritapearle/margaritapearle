@@ -2,705 +2,1605 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Margarita Pearle | Private Companionship</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Margarita Pearle | Private Companionship
+  </title>
 
   <meta
     name="description"
     content="Margarita Pearle — private companionship in Sydney, Newcastle, Wollongong and regional New South Wales."
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- FONTS -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
     rel="stylesheet"
   >
 
+
   <style>
+
+
+    /* ========================================
+       RESET
+    ======================================== */
 
     * {
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
+
       margin: 0;
+
       background: #ffffff;
-      color: #111;
-      font-family: "Inter", Arial, sans-serif;
+
+      color: #111111;
+
+      font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+
       font-weight: 300;
+
       line-height: 1.7;
+
     }
+
 
     h1,
     h2,
     h3 {
-      font-family: "Cormorant Garamond", Georgia, serif;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
       font-weight: 400;
+
     }
 
+
     a {
+
       color: inherit;
+
       text-decoration: none;
+
     }
+
 
     img,
     video {
+
       display: block;
+
       width: 100%;
+
     }
+
 
     .container {
-      width: min(1180px, calc(100% - 48px));
+
+      width:
+        min(
+          1180px,
+          calc(100% - 48px)
+        );
+
       margin: 0 auto;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        ANNOUNCEMENT
-    ========================= */
+    ======================================== */
 
     .announcement {
+
       background: #000;
+
       color: #fff;
+
       text-align: center;
-      padding: 10px 20px;
-      font-family: "Cormorant Garamond", serif;
+
+      padding:
+        10px
+        20px;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 16px;
+
       letter-spacing: .03em;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        HEADER
-    ========================= */
+    ======================================== */
 
     header {
+
       background: #fff;
-      border-bottom: 1px solid #ddd;
+
+      border-bottom:
+        1px
+        solid
+        #dddddd;
+
     }
+
 
     .topbar {
+
       min-height: 84px;
+
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
+
       gap: 20px;
+
     }
+
 
     .contact-small {
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 18px;
+
     }
+
 
     .brand {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(28px, 4vw, 48px);
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
+      font-size:
+        clamp(
+          28px,
+          4vw,
+          48px
+        );
+
       letter-spacing: .20em;
+
       text-align: center;
+
       white-space: nowrap;
+
     }
+
 
     .enquire-button {
-      border: 1px solid #111;
-      padding: 9px 24px;
+
+      border:
+        1px
+        solid
+        #111;
+
+      padding:
+        9px
+        24px;
+
       border-radius: 40px;
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 18px;
+
       transition: .2s;
+
     }
+
 
     .enquire-button:hover {
+
       background: #111;
+
       color: #fff;
+
     }
+
 
     nav {
-      border-top: 1px solid #eee;
+
+      border-top:
+        1px
+        solid
+        #eeeeee;
+
     }
+
 
     nav .container {
+
       display: flex;
+
       justify-content: center;
+
       flex-wrap: wrap;
+
       gap: 38px;
-      padding: 15px 20px;
+
+      padding:
+        15px
+        20px;
+
     }
+
 
     nav a {
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 18px;
+
       letter-spacing: .12em;
+
       text-transform: uppercase;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        HERO
-    ========================= */
+    ======================================== */
 
     .hero {
+
       min-height: 720px;
+
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      border-bottom: 1px solid #ddd;
+
+      grid-template-columns:
+        1.1fr
+        .9fr;
+
+      border-bottom:
+        1px
+        solid
+        #dddddd;
+
     }
+
 
     .hero-copy {
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
-      padding: 90px 9vw;
+
+      padding:
+        90px
+        9vw;
+
     }
+
 
     .hero-inner {
+
       max-width: 600px;
+
     }
+
 
     .eyebrow {
+
       font-size: 14px;
+
       letter-spacing: .30em;
+
       text-transform: uppercase;
+
       margin-bottom: 26px;
+
     }
+
 
     .hero h1 {
-      font-size: clamp(64px, 7vw, 105px);
+
+      font-size:
+        clamp(
+          64px,
+          7vw,
+          105px
+        );
+
       line-height: .95;
-      margin: 0 0 34px;
+
+      margin:
+        0
+        0
+        34px;
+
       letter-spacing: -.02em;
+
     }
+
 
     .hero p {
+
       font-size: 20px;
+
       line-height: 1.65;
+
       max-width: 570px;
+
       margin-bottom: 35px;
+
     }
+
 
     .buttons {
+
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 14px;
+
     }
+
 
     .button {
+
       display: inline-block;
-      border: 1px solid #111;
-      padding: 14px 28px;
+
+      border:
+        1px
+        solid
+        #111;
+
+      padding:
+        14px
+        28px;
+
       text-transform: uppercase;
+
       letter-spacing: .18em;
+
       font-size: 13px;
+
       transition: .2s;
+
     }
+
 
     .button:hover {
+
       background: #111;
+
       color: #fff;
+
     }
+
 
     .hero-image {
+
       min-height: 720px;
-      background-image: url("000004490028 (1).jpg");
+
+      background-image:
+        url("000004490028 (1).jpg");
+
       background-size: cover;
+
       background-position: center;
+
     }
 
 
-    /* =========================
-       GENERAL
-    ========================= */
+
+    /* ========================================
+       GENERAL SECTIONS
+    ======================================== */
 
     section {
-      padding: 100px 0;
+
+      padding:
+        100px
+        0;
+
     }
+
 
     .section-label {
+
       text-align: center;
+
       text-transform: uppercase;
+
       letter-spacing: .32em;
+
       font-size: 13px;
+
       margin-bottom: 15px;
+
     }
+
 
     .section-title {
+
       text-align: center;
-      font-size: clamp(45px, 5vw, 65px);
-      margin: 0 0 45px;
+
+      font-size:
+        clamp(
+          45px,
+          5vw,
+          65px
+        );
+
+      margin:
+        0
+        0
+        45px;
+
       line-height: 1.05;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        ABOUT
-    ========================= */
+    ======================================== */
 
     .about {
+
       max-width: 850px;
+
       margin: auto;
+
       text-align: center;
+
       font-size: 19px;
+
     }
+
 
     .about p {
-      margin: 0 0 20px;
+
+      margin:
+        0
+        0
+        20px;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        TOUR DATES
-    ========================= */
+    ======================================== */
 
     .tours {
+
       background: #050505;
+
       color: #fff;
+
     }
+
 
     .tour-intro {
+
       max-width: 800px;
-      margin: 0 auto 55px;
+
+      margin:
+        0
+        auto
+        55px;
+
       text-align: center;
-      color: #ddd;
+
+      color: #dddddd;
+
       font-size: 17px;
+
     }
+
 
     .tour-list {
-      border-top: 1px solid #555;
+
+      border-top:
+        1px
+        solid
+        #555555;
+
     }
+
 
     .tour-row {
+
       display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr;
+
+      grid-template-columns:
+        1.3fr
+        1fr
+        1fr;
+
       gap: 30px;
-      padding: 28px 5px;
-      border-bottom: 1px solid #444;
+
+      padding:
+        28px
+        5px;
+
+      border-bottom:
+        1px
+        solid
+        #444444;
+
       align-items: center;
+
     }
+
 
     .tour-city {
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 30px;
+
     }
+
 
     .tour-date {
+
       font-size: 15px;
+
       letter-spacing: .08em;
+
       text-transform: uppercase;
+
     }
+
 
     .tour-note {
-      color: #bbb;
+
+      color: #bbbbbb;
+
       font-size: 14px;
+
       text-align: right;
+
     }
+
 
     .tour-footer {
+
       margin-top: 40px;
+
       max-width: 850px;
+
       font-size: 16px;
-      color: #ddd;
+
+      color: #dddddd;
+
     }
+
 
     .tour-footer p {
+
       margin-bottom: 18px;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        RATES
-    ========================= */
+    ======================================== */
 
     .rates-wrap {
+
       max-width: 950px;
+
       margin: auto;
+
     }
+
 
     .rates-intro {
+
       max-width: 800px;
-      margin: 0 auto 45px;
+
+      margin:
+        0
+        auto
+        45px;
+
       text-align: center;
+
     }
+
 
     .rate-heading {
+
       font-size: 34px;
-      margin: 55px 0 5px;
+
+      margin:
+        55px
+        0
+        5px;
+
     }
+
 
     .rate-table {
+
       width: 100%;
+
       border-collapse: collapse;
+
     }
+
 
     .rate-table td {
-      padding: 20px 5px;
-      border-bottom: 1px solid #ccc;
+
+      padding:
+        20px
+        5px;
+
+      border-bottom:
+        1px
+        solid
+        #cccccc;
+
       font-size: 18px;
+
     }
+
 
     .rate-table td:last-child {
+
       text-align: right;
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 23px;
+
       white-space: nowrap;
+
     }
+
 
     .small-note {
+
       display: block;
+
       margin-top: 3px;
-      color: #666;
+
+      color: #666666;
+
       font-size: 13px;
+
     }
+
 
     .rate-note {
+
       margin-top: 45px;
+
       font-size: 16px;
+
       line-height: 1.8;
+
     }
+
 
     .rate-note p {
+
       margin-bottom: 13px;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        DEPOSITS
-    ========================= */
+    ======================================== */
 
     .deposits {
+
       background: #f6f6f4;
+
     }
+
 
     .deposit-grid {
+
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+
+      grid-template-columns:
+        .85fr
+        1.15fr;
+
       gap: 80px;
+
       max-width: 1050px;
+
       margin: auto;
+
     }
+
 
     .deposit-grid h3 {
+
       font-size: 34px;
-      margin: 0 0 25px;
+
+      margin:
+        0
+        0
+        25px;
+
     }
+
 
     .deposit-table {
+
       width: 100%;
+
       border-collapse: collapse;
+
     }
+
 
     .deposit-table td {
-      border-bottom: 1px solid #bbb;
-      padding: 13px 0;
+
+      border-bottom:
+        1px
+        solid
+        #bbbbbb;
+
+      padding:
+        13px
+        0;
+
     }
+
 
     .deposit-table td:last-child {
+
       text-align: right;
+
       font-weight: 500;
+
     }
+
 
     .deposit-copy p {
+
       margin-top: 0;
+
       margin-bottom: 22px;
+
     }
+
 
     .policy {
-      border: 1px solid #bbb;
+
+      border:
+        1px
+        solid
+        #bbbbbb;
+
       padding: 30px;
+
       margin-top: 35px;
+
       background: #fff;
+
     }
+
 
     .policy h3 {
+
       margin-top: 0;
+
       font-size: 29px;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        AVAILABILITY
-    ========================= */
+    ======================================== */
 
     .availability {
+
       max-width: 900px;
+
       margin: auto;
+
     }
+
 
     .availability p {
+
       font-size: 17px;
+
       margin-bottom: 20px;
+
     }
+
 
     .notice-box {
-      border: 1px solid #ccc;
+
+      border:
+        1px
+        solid
+        #cccccc;
+
       padding: 30px;
+
       margin-top: 40px;
+
     }
+
 
     .notice-box h3 {
+
       font-size: 27px;
-      margin: 0 0 12px;
+
+      margin:
+        0
+        0
+        12px;
+
     }
 
 
-    /* =========================
-       EDITORIAL MEDIA
-    ========================= */
 
-    .media-section {
+    /* ========================================
+       TOUR MEDIA SLIDER
+    ======================================== */
+
+    .tour-slider-section {
+
       padding: 0;
-      background: #fff;
+
+      background: #000;
+
+      position: relative;
+
     }
 
-    .media-item {
-      margin: 0;
-      width: 100%;
-      overflow: hidden;
-    }
 
-    .media-item img,
-    .media-item video {
+    .tour-slider {
+
+      position: relative;
+
       width: 100%;
-      height: 82vh;
+
+      height: 78vh;
+
       min-height: 600px;
+
+      overflow: hidden;
+
+      background: #000;
+
+    }
+
+
+    .tour-slide {
+
+      position: absolute;
+
+      inset: 0;
+
+      transform: translateX(100%);
+
+      opacity: 0;
+
+      transition:
+        transform
+        1s
+        cubic-bezier(.77,0,.18,1),
+        opacity
+        .7s
+        ease;
+
+      z-index: 1;
+
+    }
+
+
+    .tour-slide.active {
+
+      transform: translateX(0);
+
+      opacity: 1;
+
+      z-index: 3;
+
+    }
+
+
+    .tour-slide.previous {
+
+      transform: translateX(-100%);
+
+      opacity: 0;
+
+      z-index: 2;
+
+    }
+
+
+    .tour-slide img,
+    .tour-slide video {
+
+      width: 100%;
+
+      height: 100%;
+
       object-fit: cover;
-      display: block;
+
     }
 
-    .media-divider {
-      padding: 28px 20px;
-      text-align: center;
+
+    .slider-label {
+
+      position: absolute;
+
+      z-index: 8;
+
+      top: 30px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      color: #fff;
+
+      font-size: 12px;
+
+      letter-spacing: .28em;
+
+      text-transform: uppercase;
+
+      text-shadow:
+        0
+        1px
+        12px
+        rgba(0,0,0,.45);
+
+      white-space: nowrap;
+
+    }
+
+
+    /* slider arrows */
+
+    .slider-arrow {
+
+      position: absolute;
+
+      z-index: 10;
+
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      width: 52px;
+
+      height: 52px;
+
+      padding: 0;
+
+      border: 0;
+
+      border-radius: 50%;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          .88
+        );
+
+      color: #111;
+
+      font-family:
+        Georgia,
+        serif;
+
+      font-size: 38px;
+
+      line-height: 45px;
+
+      cursor: pointer;
+
+      transition: .2s;
+
+    }
+
+
+    .slider-arrow:hover {
+
+      background: #ffffff;
+
+      transform:
+        translateY(-50%)
+        scale(1.05);
+
+    }
+
+
+    .slider-prev {
+
+      left: 24px;
+
+    }
+
+
+    .slider-next {
+
+      right: 24px;
+
+    }
+
+
+    /* slider dots */
+
+    .slider-dots {
+
+      position: absolute;
+
+      z-index: 10;
+
+      bottom: 25px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+    }
+
+
+    .slider-dot {
+
+      width: 10px;
+
+      height: 10px;
+
+      padding: 0;
+
+      border:
+        1px
+        solid
+        #fff;
+
+      border-radius: 50%;
+
+      background: transparent;
+
+      cursor: pointer;
+
+      transition: .2s;
+
+    }
+
+
+    .slider-dot.active {
+
       background: #fff;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 26px;
-      letter-spacing: .04em;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        CONTACT
-    ========================= */
+    ======================================== */
 
     .contact-section {
+
       background: #050505;
+
       color: #fff;
+
       text-align: center;
+
     }
+
 
     .contact-section p {
+
       max-width: 720px;
-      margin: 0 auto 30px;
-      color: #ddd;
+
+      margin:
+        0
+        auto
+        30px;
+
+      color: #dddddd;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        FOOTER
-    ========================= */
+    ======================================== */
 
     footer {
+
       background: #000;
+
       color: #fff;
+
       text-align: center;
-      padding: 70px 20px;
+
+      padding:
+        70px
+        20px;
+
     }
+
 
     .footer-brand {
-      font-family: "Cormorant Garamond", serif;
+
+      font-family:
+        "Cormorant Garamond",
+        serif;
+
       font-size: 42px;
+
       letter-spacing: .22em;
+
       margin-bottom: 15px;
+
     }
+
 
     .footer-location {
-      color: #aaa;
+
+      color: #aaaaaa;
+
       font-size: 14px;
+
     }
 
 
-    /* =========================
+
+    /* ========================================
        MOBILE
-    ========================= */
+    ======================================== */
 
     @media (max-width: 800px) {
 
+
       .container {
-        width: min(100% - 30px, 1180px);
+
+        width:
+          min(
+            100% - 30px,
+            1180px
+          );
+
       }
+
 
       .contact-small {
+
         display: none;
+
       }
+
 
       .brand {
+
         font-size: 25px;
+
         letter-spacing: .12em;
+
       }
+
 
       .enquire-button {
-        padding: 7px 15px;
+
+        padding:
+          7px
+          15px;
+
         font-size: 15px;
+
       }
+
 
       nav .container {
-        gap: 16px 25px;
+
+        gap:
+          16px
+          25px;
+
       }
+
 
       nav a {
+
         font-size: 14px;
+
       }
+
 
       .hero {
+
         display: flex;
+
         flex-direction: column;
+
         min-height: 0;
+
       }
+
 
       .hero-copy {
-        padding: 70px 28px;
+
+        padding:
+          70px
+          28px;
+
         order: 2;
+
       }
+
 
       .hero-image {
+
         min-height: 480px;
+
         order: 1;
+
       }
+
 
       .hero h1 {
+
         font-size: 65px;
+
       }
+
 
       section {
-        padding: 75px 0;
+
+        padding:
+          75px
+          0;
+
       }
+
 
       .tour-row {
+
         grid-template-columns: 1fr;
+
         gap: 5px;
+
       }
+
 
       .tour-note {
+
         text-align: left;
+
       }
+
 
       .deposit-grid {
+
         grid-template-columns: 1fr;
+
         gap: 50px;
+
       }
 
-      .media-section {
+
+      .tour-slider-section {
+
         padding: 0;
+
       }
 
-      .media-item img,
-      .media-item video {
-        height: 68vh;
-        min-height: 480px;
+
+      .tour-slider {
+
+        height: 66vh;
+
+        min-height: 470px;
+
       }
+
+
+      .slider-arrow {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 30px;
+
+      }
+
+
+      .slider-prev {
+
+        left: 12px;
+
+      }
+
+
+      .slider-next {
+
+        right: 12px;
+
+      }
+
+
+      .slider-label {
+
+        top: 20px;
+
+        font-size: 10px;
+
+      }
+
 
       .footer-brand {
+
         font-size: 29px;
+
       }
+
     }
 
+
   </style>
+
 </head>
 
 
 <body>
 
 
-  <!-- ANNOUNCEMENT -->
+  <!-- ========================================
+       TOP ANNOUNCEMENT
+  ======================================== -->
 
   <div class="announcement">
-    Touring throughout Sydney, Newcastle, Wollongong and regional New South Wales.
+
+    Touring throughout Sydney, Newcastle,
+    Wollongong and regional New South Wales.
     Please enquire directly for current availability.
+
   </div>
 
 
-  <!-- HEADER -->
+
+  <!-- ========================================
+       HEADER
+  ======================================== -->
 
   <header>
 
+
     <div class="container topbar">
 
+
       <div class="contact-small">
+
         Private enquiries
+
       </div>
+
 
       <div class="brand">
+
         MARGARITA PEARLE
+
       </div>
 
-      <a href="#contact" class="enquire-button">
+
+      <a
+        href="#contact"
+        class="enquire-button"
+      >
+
         Enquire
+
       </a>
+
 
     </div>
 
+
     <nav>
+
 
       <div class="container">
 
-        <a href="#about">About</a>
-        <a href="#tours">Tour Dates</a>
-        <a href="#rates">Rates</a>
-        <a href="#deposits">Deposits</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#about">
+
+          About
+
+        </a>
+
+
+        <a href="#tours">
+
+          Tour Dates
+
+        </a>
+
+
+        <a href="#rates">
+
+          Rates
+
+        </a>
+
+
+        <a href="#deposits">
+
+          Deposits
+
+        </a>
+
+
+        <a href="#contact">
+
+          Contact
+
+        </a>
+
 
       </div>
 
+
     </nav>
 
+
   </header>
+
 
 
   <main>
 
 
-    <!-- HERO -->
+
+    <!-- ========================================
+         HERO
+    ======================================== -->
 
     <div class="hero">
 
+
       <div class="hero-copy">
+
 
         <div class="hero-inner">
 
+
           <div class="eyebrow">
+
             Sydney • Australia
+
           </div>
 
+
           <h1>
+
             Private<br>
             Companionship
+
           </h1>
 
+
           <p>
-            Sydney based with regular availability throughout
-            Newcastle, Wollongong and regional New South Wales.
+
+            Sydney based with regular availability
+            throughout Newcastle, Wollongong and
+            regional New South Wales.
+
           </p>
+
 
           <div class="buttons">
 
-            <a href="#tours" class="button">
+
+            <a
+              href="#tours"
+              class="button"
+            >
+
               View Tour Dates
+
             </a>
 
-            <a href="#contact" class="button">
+
+            <a
+              href="#contact"
+              class="button"
+            >
+
               Enquire
+
             </a>
+
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
       <div
         class="hero-image"
@@ -708,681 +1608,1734 @@
         aria-label="Margarita Pearle"
       ></div>
 
+
     </div>
 
 
-    <!-- ABOUT -->
+
+    <!-- ========================================
+         ABOUT
+    ======================================== -->
 
     <section id="about">
 
+
       <div class="container">
 
+
         <div class="section-label">
+
           Introduction
+
         </div>
 
+
         <h2 class="section-title">
+
           About Margarita
+
         </h2>
+
 
         <div class="about">
 
-          <p>
-            I offer private, discreet and unhurried companionship
-            throughout Sydney and while touring.
-          </p>
 
           <p>
-            Red hair, fair skin, blue eyes, tattoos and completely natural.
+
+            I offer private, discreet and unhurried
+            companionship throughout Sydney and while touring.
+
           </p>
 
-          <p>
-            Outside of work, my interests include software development,
-            technology and travel.
-          </p>
 
           <p>
-            Discretion, privacy and respectful communication are
-            prioritised at all times.
+
+            Red hair, fair skin, blue eyes,
+            tattoos and completely natural.
+
           </p>
+
+
+          <p>
+
+            Outside of work, my interests include
+            software development, technology and travel.
+
+          </p>
+
+
+          <p>
+
+            Discretion, privacy and respectful communication
+            are prioritised at all times.
+
+          </p>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- TOUR DATES -->
 
-    <section id="tours" class="tours">
+    <!-- ========================================
+         TOUR DATES
+    ======================================== -->
+
+    <section
+      id="tours"
+      class="tours"
+    >
+
 
       <div class="container">
 
+
         <div class="section-label">
+
           Touring
+
         </div>
 
+
         <h2 class="section-title">
+
           Tour Dates
+
         </h2>
+
 
         <div class="tour-intro">
 
-          Regional tours frequently take place Tuesday–Thursday,
-          with occasional extensions into the weekend or
-          Sunday–Monday arrivals.
+
+          Regional tours frequently take place
+          Tuesday–Thursday, with occasional extensions
+          into the weekend or Sunday–Monday arrivals.
+
 
           <br><br>
 
-          Arrival and departure generally occur outside the dates
-          advertised below, allowing full availability throughout
-          the published touring dates.
+
+          Arrival and departure generally occur outside
+          the dates advertised below, allowing full
+          availability throughout the published touring dates.
+
 
         </div>
+
 
 
         <div class="tour-list">
 
-          <div class="tour-row">
-            <div class="tour-city">Tamworth</div>
-            <div class="tour-date">17–21 August</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
+
+          <!-- TAMWORTH -->
 
           <div class="tour-row">
-            <div class="tour-city">Dubbo</div>
-            <div class="tour-date">15–17 September</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
+
+            <div class="tour-city">
+
+              Tamworth
+
             </div>
+
+            <div class="tour-date">
+
+              17–21 August
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
           </div>
 
-          <div class="tour-row">
-            <div class="tour-city">Wagga Wagga</div>
-            <div class="tour-date">6–8 October</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
+
+
+          <!-- DUBBO -->
 
           <div class="tour-row">
-            <div class="tour-city">Mudgee</div>
-            <div class="tour-date">13–15 October</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
+
+            <div class="tour-city">
+
+              Dubbo
+
             </div>
+
+            <div class="tour-date">
+
+              15–17 September
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
           </div>
 
-          <div class="tour-row">
-            <div class="tour-city">Coffs Harbour</div>
-            <div class="tour-date">10–12 November</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
+
+
+          <!-- WAGGA -->
 
           <div class="tour-row">
-            <div class="tour-city">Albury</div>
-            <div class="tour-date">17–19 November</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
+
+            <div class="tour-city">
+
+              Wagga Wagga
+
             </div>
+
+            <div class="tour-date">
+
+              6–8 October
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
           </div>
 
+
+
+          <!-- MUDGEE -->
+
           <div class="tour-row">
-            <div class="tour-city">Ulladulla</div>
-            <div class="tour-date">8–10 December</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
+
+            <div class="tour-city">
+
+              Mudgee
+
             </div>
+
+            <div class="tour-date">
+
+              13–15 October
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
           </div>
+
+
+
+          <!-- COFFS HARBOUR -->
+
+          <div class="tour-row">
+
+            <div class="tour-city">
+
+              Coffs Harbour
+
+            </div>
+
+            <div class="tour-date">
+
+              10–12 November
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
+          </div>
+
+
+
+          <!-- ALBURY -->
+
+          <div class="tour-row">
+
+            <div class="tour-city">
+
+              Albury
+
+            </div>
+
+            <div class="tour-date">
+
+              17–19 November
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
+          </div>
+
+
+
+          <!-- ULLADULLA -->
+
+          <div class="tour-row">
+
+            <div class="tour-city">
+
+              Ulladulla
+
+            </div>
+
+            <div class="tour-date">
+
+              8–10 December
+
+            </div>
+
+            <div class="tour-note">
+
+              Arrival and departure outside advertised dates
+
+            </div>
+
+          </div>
+
 
         </div>
+
 
 
         <div class="tour-footer">
 
-          <p>
-            Please enquire regarding my current dates for
-            <strong>Newcastle, Wollongong and adjacent towns</strong>,
-            as these locations are visited regularly and are not
-            always listed as formal tours.
-          </p>
 
           <p>
+
+            Please enquire regarding my current dates
+            for <strong>Newcastle, Wollongong and adjacent towns</strong>,
+            as these locations are visited regularly and
+            are not always listed as formal tours.
+
+          </p>
+
+
+          <p>
+
             <strong>
-              Tour dates with confirmed pre-bookings are always honoured,
-              irrespective of overall enquiry volume.
+
+              Tour dates with confirmed pre-bookings
+              are always honoured, irrespective of
+              overall enquiry volume.
+
             </strong>
-            Dates without confirmed pre-bookings remain subject to
-            modification or cancellation.
+
+            Dates without confirmed pre-bookings remain
+            subject to modification or cancellation.
+
           </p>
 
-          <p>
-            Touring rates within New South Wales remain identical
-            to my advertised rates. Outside New South Wales,
-            rates may be adjusted and will be published accordingly.
-          </p>
 
           <p>
+
+            Touring rates within New South Wales
+            remain identical to my advertised rates.
+
+            Outside New South Wales, rates may be adjusted
+            and will be published accordingly.
+
+          </p>
+
+
+          <p>
+
             Short-notice bookings are welcome where possible;
-            however, immediate availability is frequently limited
-            to digital engagements.
+            however, immediate availability is frequently
+            limited to digital engagements.
+
           </p>
 
+
           <p>
-            A minimum of <strong>24–48 hours' notice</strong> is recommended
-            for in-person appointments, with
-            <strong>at least 48 hours strongly recommended for tours.</strong>
+
+            A minimum of
+            <strong>24–48 hours' notice</strong>
+            is recommended for in-person appointments,
+            with
+
+            <strong>
+
+              at least 48 hours strongly recommended
+              for tours.
+
+            </strong>
+
           </p>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- RATES -->
+
+    <!-- ========================================
+         RATES
+    ======================================== -->
 
     <section id="rates">
 
+
       <div class="container rates-wrap">
 
+
         <div class="section-label">
+
           Engagements
+
         </div>
 
+
         <h2 class="section-title">
+
           Rates
+
         </h2>
+
 
 
         <div class="rates-intro">
 
-          <p>
-            Touring rates within New South Wales remain identical
-            to the rates advertised below.
-          </p>
 
           <p>
-            Rates outside New South Wales may be adjusted according
-            to destination and will be published accordingly.
+
+            Touring rates within New South Wales
+            remain identical to the rates advertised below.
+
           </p>
+
+
+          <p>
+
+            Rates outside New South Wales may be adjusted
+            according to destination and will be
+            published accordingly.
+
+          </p>
+
 
         </div>
+
 
 
         <!-- INCALL -->
 
         <h3 class="rate-heading">
+
           Incall
+
         </h3>
+
 
         <table class="rate-table">
 
+
           <tr>
+
             <td>
+
               30 minutes
+
               <span class="small-note">
+
                 Offered at my discretion
+
               </span>
+
             </td>
-            <td>AUD $600</td>
+
+            <td>
+
+              AUD $600
+
+            </td>
+
           </tr>
 
-          <tr>
-            <td>1 hour</td>
-            <td>AUD $900</td>
-          </tr>
 
           <tr>
-            <td>2 hours</td>
-            <td>AUD $1,800</td>
+
+            <td>
+
+              1 hour
+
+            </td>
+
+            <td>
+
+              AUD $900
+
+            </td>
+
           </tr>
 
-          <tr>
-            <td>3 hours</td>
-            <td>AUD $2,600</td>
-          </tr>
 
           <tr>
-            <td>Additional hours</td>
-            <td>AUD $800</td>
+
+            <td>
+
+              2 hours
+
+            </td>
+
+            <td>
+
+              AUD $1,800
+
+            </td>
+
           </tr>
 
-          <tr>
-            <td>Couples — 1 hour</td>
-            <td>AUD $1,500</td>
-          </tr>
 
           <tr>
-            <td>Overnight — 12 hours</td>
-            <td>AUD $7,000</td>
+
+            <td>
+
+              3 hours
+
+            </td>
+
+            <td>
+
+              AUD $2,600
+
+            </td>
+
           </tr>
+
+
+          <tr>
+
+            <td>
+
+              Additional hours
+
+            </td>
+
+            <td>
+
+              AUD $800
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td>
+
+              Couples — 1 hour
+
+            </td>
+
+            <td>
+
+              AUD $1,500
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td>
+
+              Overnight — 12 hours
+
+            </td>
+
+            <td>
+
+              AUD $7,000
+
+            </td>
+
+          </tr>
+
 
         </table>
+
 
 
         <!-- OUTCALL -->
 
         <h3 class="rate-heading">
+
           Outcall
+
         </h3>
+
 
         <table class="rate-table">
 
-          <tr>
-            <td>1 hour</td>
-            <td>AUD $900</td>
-          </tr>
 
           <tr>
-            <td>2 hours</td>
-            <td>AUD $1,800</td>
+
+            <td>
+
+              1 hour
+
+            </td>
+
+            <td>
+
+              AUD $900
+
+            </td>
+
           </tr>
 
-          <tr>
-            <td>3 hours</td>
-            <td>AUD $2,600</td>
-          </tr>
 
           <tr>
-            <td>Additional hours</td>
-            <td>AUD $800</td>
+
+            <td>
+
+              2 hours
+
+            </td>
+
+            <td>
+
+              AUD $1,800
+
+            </td>
+
           </tr>
 
-          <tr>
-            <td>Couples — 1 hour</td>
-            <td>AUD $1,500</td>
-          </tr>
 
           <tr>
-            <td>Overnight — 12 hours</td>
-            <td>AUD $7,000</td>
+
+            <td>
+
+              3 hours
+
+            </td>
+
+            <td>
+
+              AUD $2,600
+
+            </td>
+
           </tr>
+
+
+          <tr>
+
+            <td>
+
+              Additional hours
+
+            </td>
+
+            <td>
+
+              AUD $800
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td>
+
+              Couples — 1 hour
+
+            </td>
+
+            <td>
+
+              AUD $1,500
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td>
+
+              Overnight — 12 hours
+
+            </td>
+
+            <td>
+
+              AUD $7,000
+
+            </td>
+
+          </tr>
+
 
         </table>
 
 
+
         <div class="rate-note">
 
+
           <p>
+
             Bookings commencing between
+
             <strong>
-              10:00 PM and 6:00 AM incur an additional AUD $200 late-hours fee.
+
+              10:00 PM and 6:00 AM incur
+              an additional AUD $200 late-hours fee.
+
             </strong>
+
           </p>
 
-          <p>
-            Extended travel may incur an additional travel fee
-            depending on distance and location.
-          </p>
 
           <p>
+
+            Extended travel may incur an additional
+            travel fee depending on distance and location.
+
+          </p>
+
+
+          <p>
+
             <strong>
-              Advertised rates are firm. Discounts are not offered
-              to repeat or returning clients.
+
+              Advertised rates are firm.
+              Discounts are not offered to
+              repeat or returning clients.
+
             </strong>
+
           </p>
 
+
           <p>
-            Please refer to my current advertising or enquire directly
-            for digital and virtual engagement rates.
+
+            Please refer to my current advertising
+            or enquire directly for digital and
+            virtual engagement rates.
+
           </p>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- DEPOSITS -->
 
-    <section id="deposits" class="deposits">
+    <!-- ========================================
+         DEPOSITS
+    ======================================== -->
+
+    <section
+      id="deposits"
+      class="deposits"
+    >
+
 
       <div class="container">
 
+
         <div class="section-label">
+
           Booking Information
+
         </div>
 
+
         <h2 class="section-title">
+
           Deposits & Payments
+
         </h2>
+
 
 
         <div class="deposit-grid">
 
+
           <div>
 
+
             <h3>
+
               Deposit Guide
+
             </h3>
+
 
             <table class="deposit-table">
 
-              <tr>
-                <td>1 hour</td>
-                <td>$300</td>
-              </tr>
 
               <tr>
-                <td>2 hours</td>
-                <td>$600</td>
+
+                <td>
+
+                  1 hour
+
+                </td>
+
+                <td>
+
+                  $300
+
+                </td>
+
               </tr>
 
-              <tr>
-                <td>3+ hour engagements</td>
-                <td>$600+</td>
-              </tr>
 
               <tr>
-                <td>Interstate touring</td>
-                <td>$300–$600+</td>
+
+                <td>
+
+                  2 hours
+
+                </td>
+
+                <td>
+
+                  $600
+
+                </td>
+
               </tr>
 
+
               <tr>
-                <td>Overnight arrangements</td>
-                <td>Confirmed on enquiry</td>
+
+                <td>
+
+                  3+ hour engagements
+
+                </td>
+
+                <td>
+
+                  $600+
+
+                </td>
+
               </tr>
+
+
+              <tr>
+
+                <td>
+
+                  Interstate touring
+
+                </td>
+
+                <td>
+
+                  $300–$600+
+
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+
+                  Overnight arrangements
+
+                </td>
+
+                <td>
+
+                  Confirmed on enquiry
+
+                </td>
+
+              </tr>
+
 
             </table>
 
+
           </div>
+
 
 
           <div class="deposit-copy">
 
+
             <h3>
+
               Payment
+
             </h3>
 
-            <p>
-              <strong>
-                A deposit is required to secure all bookings.
-              </strong>
-              Deposits are non-refundable unless otherwise agreed.
-            </p>
 
             <p>
-              Deposits confirm genuine and committed arrangements,
-              support personal safety and security, and contribute
-              towards operational costs incurred when arranging
+
+              <strong>
+
+                A deposit is required
+                to secure all bookings.
+
+              </strong>
+
+              Deposits are non-refundable
+              unless otherwise agreed.
+
+            </p>
+
+
+            <p>
+
+              Deposits confirm genuine and committed
+              arrangements, support personal safety
+              and security, and contribute towards
+              operational costs incurred when arranging
               and reserving an appointment.
+
             </p>
 
+
             <p>
+
               Accepted deposit methods include
+
               <strong>
-                PayID, Beem It, cryptocurrency or gift card
+
+                PayID, Beem It, cryptocurrency
+                or gift card
+
               </strong>
+
               at my discretion.
+
             </p>
 
-            <p>
-              Clients particularly concerned about discretion are
-              encouraged to arrange cryptocurrency or purchase a
-              suitable gift card.
-            </p>
 
             <p>
-              PayID details are not associated with my professional
-              services and may be supplied using an email address
-              or a separate mobile number that is not used for
-              booking enquiries.
+
+              Clients particularly concerned about
+              discretion are encouraged to arrange
+              cryptocurrency or purchase a suitable
+              gift card.
+
             </p>
 
+
             <p>
+
+              PayID details are not associated with
+              my professional services and may be supplied
+              using an email address or a separate mobile
+              number that is not used for booking enquiries.
+
+            </p>
+
+
+            <p>
+
               The remaining balance is settled discreetly
-              <strong>in cash upon meeting.</strong>
-              Please ensure sufficient cash is available for any
-              agreed extensions or additional charges.
+
+              <strong>
+
+                in cash upon meeting.
+
+              </strong>
+
+              Please ensure sufficient cash is available
+              for any agreed extensions or additional charges.
+
             </p>
 
+
             <p>
-              ATM withdrawal limits may restrict larger withdrawals.
-              Please organise sufficient cash in advance and allow
-              adequate time to visit a bank branch if required.
+
+              ATM withdrawal limits may restrict
+              larger withdrawals.
+
+              Please organise sufficient cash in advance
+              and allow adequate time to visit a bank branch
+              if required.
+
             </p>
+
 
 
             <div class="policy">
 
+
               <h3>
+
                 Payment & Consent
+
               </h3>
 
+
               <p>
+
                 All agreed booking fees are payable in full.
-                Payment is a material condition of the booking
-                and of my agreement to provide the services arranged.
+
+                Payment is a material condition of the
+                booking and of my agreement to provide
+                the services arranged.
+
               </p>
 
+
               <p>
-                Consent to sexual services is given on the basis
-                of the agreed arrangement, including payment of
-                the agreed fee. I do not consent to services being
-                obtained through deliberate deception, fraud or
+
+                Consent to sexual services is given
+                on the basis of the agreed arrangement,
+                including payment of the agreed fee.
+
+                I do not consent to services being obtained
+                through deliberate deception, fraud or
                 intentional non-payment.
+
               </p>
 
+
               <p>
+
                 <strong>
-                  Any outstanding debt will be actively pursued for recovery.
+
+                  Any outstanding debt will be
+                  actively pursued for recovery.
+
                 </strong>
-                Where payment cannot be recovered directly, the matter
-                may be pursued through appropriate civil proceedings.
-                Where circumstances involve suspected fraud, deception
-                or other criminal conduct, the matter may also be dealt
-                with through the appropriate criminal process.
+
+                Where payment cannot be recovered directly,
+                the matter may be pursued through appropriate
+                civil proceedings.
+
+                Where circumstances involve suspected fraud,
+                deception or other criminal conduct, the matter
+                may also be dealt with through the appropriate
+                criminal process.
+
               </p>
+
 
             </div>
 
+
           </div>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- AVAILABILITY -->
+
+    <!-- ========================================
+         AVAILABILITY
+    ======================================== -->
 
     <section>
 
+
       <div class="container availability">
 
+
         <div class="section-label">
+
           Availability
+
         </div>
 
+
         <h2 class="section-title">
+
           Booking Ahead
+
         </h2>
 
-        <p>
-          Short-notice bookings are welcome where availability permits.
-          However, “available now” is frequently limited to digital
-          engagements.
-        </p>
 
         <p>
+
+          Short-notice bookings are welcome
+          where availability permits.
+
+          However, “available now” is frequently
+          limited to digital engagements.
+
+        </p>
+
+
+        <p>
+
           I recommend allowing a minimum of
-          <strong>24–48 hours' notice</strong> wherever possible.
+
+          <strong>
+
+            24–48 hours' notice
+
+          </strong>
+
+          wherever possible.
+
           For touring appointments,
-          <strong>48 hours' notice is strongly recommended.</strong>
+
+          <strong>
+
+            48 hours' notice is strongly recommended.
+
+          </strong>
+
         </p>
 
-        <p>
-          I work late at night and early in the morning where arranged.
-          Dawn appointments can also be organised with advance notice,
-          particularly while touring.
-        </p>
 
         <p>
+
+          I work late at night and early in
+          the morning where arranged.
+
+          Dawn appointments can also be organised
+          with advance notice, particularly while touring.
+
+        </p>
+
+
+        <p>
+
           Due to demand, availability between approximately
-          <strong>3:30 PM and midnight</strong>
-          can be limited, so advance booking is recommended
-          for these hours.
+
+          <strong>
+
+            3:30 PM and midnight
+
+          </strong>
+
+          can be limited, so advance booking
+          is recommended for these hours.
+
         </p>
+
 
 
         <div class="notice-box">
 
+
           <h3>
+
             Social Media
+
           </h3>
 
+
           <p>
-            I do not currently operate active social-media accounts.
-            Please use the contact methods published on my current
-            advertisements or website when making an enquiry.
+
+            I do not currently operate
+            active social-media accounts.
+
+            Please use the contact methods published
+            on my current advertisements or website
+            when making an enquiry.
+
           </p>
+
 
         </div>
 
+
       </div>
 
-    </section>
-
-
-    <!-- ======================================================
-         EDITORIAL MEDIA STRING
-    ====================================================== -->
-
-    <section class="media-section">
-
-      <!-- PHOTO -->
-      <figure class="media-item">
-
-        <img
-          src="IMG_4544.jpeg"
-          alt="Margarita Pearle"
-          loading="lazy"
-        >
-
-      </figure>
-
-
-      <!-- VIDEO -->
-      <figure class="media-item">
-
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-        >
-          <source
-            src="IMG_4329.mov"
-            type="video/quicktime"
-          >
-        </video>
-
-      </figure>
-
-
-      <!-- PHOTO -->
-      <figure class="media-item">
-
-        <img
-          src="IMG_6055.jpeg"
-          alt="Margarita Pearle touring"
-          loading="lazy"
-        >
-
-      </figure>
-
-
-      <!-- VIDEO -->
-      <figure class="media-item">
-
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-        >
-          <source
-            src="IMG_4468.mov"
-            type="video/quicktime"
-          >
-        </video>
-
-      </figure>
-
-
-      <!-- PHOTO -->
-      <figure class="media-item">
-
-        <img
-          src="IMG_6064.jpeg"
-          alt="Regional touring"
-          loading="lazy"
-        >
-
-      </figure>
 
     </section>
 
 
-    <!-- CONTACT -->
 
-    <section id="contact" class="contact-section">
+    <!-- ========================================
+         TOUR MEDIA SLIDER
+    ======================================== -->
+
+    <section class="tour-slider-section">
+
+
+      <div
+        class="tour-slider"
+        id="tourSlider"
+      >
+
+
+        <div class="slider-label">
+
+          Selected moments from touring
+
+        </div>
+
+
+
+        <!-- SLIDE 1 -->
+
+        <div class="tour-slide active">
+
+
+          <img
+            src="IMG_4544.jpeg"
+            alt="Regional New South Wales"
+          >
+
+
+        </div>
+
+
+
+        <!-- SLIDE 2 -->
+
+        <div class="tour-slide">
+
+
+          <video
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+
+
+            <source
+              src="IMG_4329.mov"
+              type="video/quicktime"
+            >
+
+
+          </video>
+
+
+        </div>
+
+
+
+        <!-- SLIDE 3 -->
+
+        <div class="tour-slide">
+
+
+          <img
+            src="IMG_6055.jpeg"
+            alt="Regional touring"
+          >
+
+
+        </div>
+
+
+
+        <!-- SLIDE 4 -->
+
+        <div class="tour-slide">
+
+
+          <video
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+
+
+            <source
+              src="IMG_4468.mov"
+              type="video/quicktime"
+            >
+
+
+          </video>
+
+
+        </div>
+
+
+
+        <!-- SLIDE 5 -->
+
+        <div class="tour-slide">
+
+
+          <img
+            src="IMG_6064.jpeg"
+            alt="Regional New South Wales touring"
+          >
+
+
+        </div>
+
+
+
+        <!-- PREVIOUS ARROW -->
+
+        <button
+          class="slider-arrow slider-prev"
+          type="button"
+          aria-label="Previous slide"
+          onclick="changeTourSlide(-1)"
+        >
+
+          ‹
+
+        </button>
+
+
+
+        <!-- NEXT ARROW -->
+
+        <button
+          class="slider-arrow slider-next"
+          type="button"
+          aria-label="Next slide"
+          onclick="changeTourSlide(1)"
+        >
+
+          ›
+
+        </button>
+
+
+
+        <!-- DOTS -->
+
+        <div class="slider-dots">
+
+
+          <button
+            class="slider-dot active"
+            type="button"
+            aria-label="Slide 1"
+            onclick="goToTourSlide(0)"
+          ></button>
+
+
+          <button
+            class="slider-dot"
+            type="button"
+            aria-label="Slide 2"
+            onclick="goToTourSlide(1)"
+          ></button>
+
+
+          <button
+            class="slider-dot"
+            type="button"
+            aria-label="Slide 3"
+            onclick="goToTourSlide(2)"
+          ></button>
+
+
+          <button
+            class="slider-dot"
+            type="button"
+            aria-label="Slide 4"
+            onclick="goToTourSlide(3)"
+          ></button>
+
+
+          <button
+            class="slider-dot"
+            type="button"
+            aria-label="Slide 5"
+            onclick="goToTourSlide(4)"
+          ></button>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- ========================================
+         CONTACT
+    ======================================== -->
+
+    <section
+      id="contact"
+      class="contact-section"
+    >
+
 
       <div class="container">
 
+
         <div class="section-label">
+
           Private Enquiries
+
         </div>
 
+
         <h2 class="section-title">
+
           Contact Margarita
+
         </h2>
 
-        <p>
-          I respond to email, text messages and WhatsApp.
-          Text message is generally the quickest way to reach me.
-          I do not take phone calls.
-        </p>
 
         <p>
-          When making an enquiry, please include your name,
-          preferred date, preferred time, booking duration,
-          incall or outcall, location/suburb/city and,
-          for outcall bookings, the address.
+
+          I respond to email, text messages and WhatsApp.
+
+          Text message is generally the quickest
+          way to reach me.
+
+          I do not take phone calls.
+
         </p>
+
+
+        <p>
+
+          When making an enquiry, please include your
+          name, preferred date, preferred time,
+          booking duration, incall or outcall,
+          location/suburb/city and, for outcall
+          bookings, the address.
+
+        </p>
+
 
       </div>
 
+
     </section>
+
 
   </main>
 
 
-  <!-- FOOTER -->
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
 
   <footer>
 
+
     <div class="footer-brand">
+
       MARGARITA PEARLE
+
     </div>
 
+
     <div class="footer-location">
+
       Sydney • Newcastle • Wollongong • Regional NSW
+
     </div>
+
 
   </footer>
 
 
+
+  <!-- ========================================
+       SLIDER JAVASCRIPT
+  ======================================== -->
+
+  <script>
+
+
+    let currentTourSlide = 0;
+
+
+    const tourSlides =
+      document.querySelectorAll(
+        ".tour-slide"
+      );
+
+
+    const tourDots =
+      document.querySelectorAll(
+        ".slider-dot"
+      );
+
+
+    let tourSliderTimer;
+
+
+
+    function showTourSlide(index) {
+
+
+      const oldIndex =
+        currentTourSlide;
+
+
+      const total =
+        tourSlides.length;
+
+
+      index =
+        (index + total) % total;
+
+
+
+      tourSlides.forEach(
+        function(slide, i) {
+
+
+          slide.classList.remove(
+            "active",
+            "previous"
+          );
+
+
+          const video =
+            slide.querySelector(
+              "video"
+            );
+
+
+          if (video) {
+
+            video.pause();
+
+          }
+
+
+        }
+      );
+
+
+
+      if (
+        oldIndex !== index
+      ) {
+
+
+        tourSlides[oldIndex]
+          .classList
+          .add("previous");
+
+
+      }
+
+
+
+      currentTourSlide =
+        index;
+
+
+
+      const current =
+        tourSlides[
+          currentTourSlide
+        ];
+
+
+
+      current
+        .classList
+        .remove("previous");
+
+
+      current
+        .classList
+        .add("active");
+
+
+
+      tourDots.forEach(
+        function(dot) {
+
+
+          dot.classList.remove(
+            "active"
+          );
+
+
+        }
+      );
+
+
+
+      tourDots[
+        currentTourSlide
+      ]
+      .classList
+      .add("active");
+
+
+
+      const currentVideo =
+        current.querySelector(
+          "video"
+        );
+
+
+      if (currentVideo) {
+
+
+        currentVideo.currentTime = 0;
+
+
+        currentVideo
+          .play()
+          .catch(
+            function() {}
+          );
+
+
+      }
+
+
+    }
+
+
+
+    function changeTourSlide(
+      direction
+    ) {
+
+
+      showTourSlide(
+        currentTourSlide
+        +
+        direction
+      );
+
+
+      restartTourTimer();
+
+
+    }
+
+
+
+    function goToTourSlide(
+      index
+    ) {
+
+
+      showTourSlide(
+        index
+      );
+
+
+      restartTourTimer();
+
+
+    }
+
+
+
+    function restartTourTimer() {
+
+
+      clearInterval(
+        tourSliderTimer
+      );
+
+
+      tourSliderTimer =
+        setInterval(
+          function() {
+
+
+            showTourSlide(
+              currentTourSlide
+              +
+              1
+            );
+
+
+          },
+          5000
+        );
+
+
+    }
+
+
+
+    showTourSlide(0);
+
+
+    restartTourTimer();
+
+
+
+    /* pause autoplay when cursor is over slider */
+
+    const tourSlider =
+      document.getElementById(
+        "tourSlider"
+      );
+
+
+    tourSlider.addEventListener(
+      "mouseenter",
+      function() {
+
+
+        clearInterval(
+          tourSliderTimer
+        );
+
+
+      }
+    );
+
+
+    tourSlider.addEventListener(
+      "mouseleave",
+      function() {
+
+
+        restartTourTimer();
+
+
+      }
+    );
+
+
+  </script>
+
+
 </body>
+
 </html>
