@@ -12,13 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -49,8 +45,6 @@
       margin: 0 auto;
     }
 
-    /* ANNOUNCEMENT */
-
     .announcement {
       background: #000;
       color: #fff;
@@ -60,8 +54,6 @@
       font-size: 16px;
       letter-spacing: .03em;
     }
-
-    /* HEADER */
 
     header {
       background: #fff;
@@ -103,9 +95,7 @@
       color: #fff;
     }
 
-    nav {
-      border-top: 1px solid #eee;
-    }
+    nav { border-top: 1px solid #eee; }
 
     nav .container {
       display: flex;
@@ -122,8 +112,6 @@
       text-transform: uppercase;
     }
 
-    /* HERO */
-
     .hero {
       min-height: 720px;
       display: grid;
@@ -136,10 +124,12 @@
       align-items: center;
       justify-content: center;
       padding: 90px 9vw;
+      min-width: 0;
     }
 
     .hero-inner {
       max-width: 600px;
+      min-width: 0;
     }
 
     .eyebrow {
@@ -154,6 +144,7 @@
       line-height: .95;
       margin: 0 0 34px;
       letter-spacing: -.02em;
+      overflow-wrap: break-word;
     }
 
     .hero p {
@@ -191,11 +182,7 @@
       background-position: center;
     }
 
-    /* GENERAL SECTIONS */
-
-    section {
-      padding: 100px 0;
-    }
+    section { padding: 100px 0; }
 
     .section-label {
       text-align: center;
@@ -212,8 +199,6 @@
       line-height: 1.05;
     }
 
-    /* ABOUT */
-
     .about {
       max-width: 850px;
       margin: auto;
@@ -221,11 +206,7 @@
       font-size: 19px;
     }
 
-    .about p {
-      margin: 0 0 20px;
-    }
-
-    /* TOUR DATES */
+    .about p { margin: 0 0 20px; }
 
     .tours {
       background: #050505;
@@ -240,9 +221,7 @@
       font-size: 17px;
     }
 
-    .tour-list {
-      border-top: 1px solid #555;
-    }
+    .tour-list { border-top: 1px solid #555; }
 
     .tour-row {
       display: grid;
@@ -277,11 +256,7 @@
       color: #ddd;
     }
 
-    .tour-footer p {
-      margin-bottom: 18px;
-    }
-
-    /* RATES */
+    .tour-footer p { margin-bottom: 18px; }
 
     .rates-wrap {
       max-width: 950px;
@@ -330,15 +305,9 @@
       line-height: 1.8;
     }
 
-    .rate-note p {
-      margin-bottom: 13px;
-    }
+    .rate-note p { margin-bottom: 13px; }
 
-    /* DEPOSITS */
-
-    .deposits {
-      background: #f6f6f4;
-    }
+    .deposits { background: #f6f6f4; }
 
     .deposit-grid {
       display: grid;
@@ -347,6 +316,8 @@
       max-width: 1050px;
       margin: auto;
     }
+
+    .deposit-grid > div { min-width: 0; }
 
     .deposit-grid h3 {
       font-size: 34px;
@@ -366,6 +337,7 @@
     .deposit-table td:last-child {
       text-align: right;
       font-weight: 500;
+      padding-left: 15px;
     }
 
     .deposit-copy p {
@@ -384,8 +356,6 @@
       margin-top: 0;
       font-size: 29px;
     }
-
-    /* AVAILABILITY */
 
     .availability {
       max-width: 900px;
@@ -408,7 +378,7 @@
       margin: 0 0 12px;
     }
 
-    /* TOUR MEDIA SLIDER */
+    /* BOTTOM PHOTO AND VIDEO SLIDESHOW */
 
     .tour-slider-section {
       padding: 0;
@@ -430,6 +400,7 @@
       inset: 0;
       transform: translateX(100%);
       opacity: 0;
+      visibility: hidden;
       transition:
         transform 1s cubic-bezier(.77, 0, .18, 1),
         opacity .7s ease;
@@ -439,12 +410,14 @@
     .tour-slide.active {
       transform: translateX(0);
       opacity: 1;
+      visibility: visible;
       z-index: 3;
     }
 
     .tour-slide.previous {
       transform: translateX(-100%);
       opacity: 0;
+      visibility: visible;
       z-index: 2;
     }
 
@@ -455,18 +428,24 @@
       object-fit: cover;
     }
 
+    .tour-slide.portrait img {
+      object-fit: contain;
+    }
+
     .slider-label {
       position: absolute;
       z-index: 8;
       top: 30px;
       left: 50%;
       transform: translateX(-50%);
+      width: calc(100% - 40px);
       color: #fff;
       font-size: 12px;
       letter-spacing: .28em;
       text-transform: uppercase;
-      text-shadow: 0 1px 12px rgba(0, 0, 0, .45);
-      white-space: nowrap;
+      text-align: center;
+      text-shadow: 0 1px 12px rgba(0, 0, 0, .65);
+      pointer-events: none;
     }
 
     .slider-arrow {
@@ -493,13 +472,8 @@
       transform: translateY(-50%) scale(1.05);
     }
 
-    .slider-prev {
-      left: 24px;
-    }
-
-    .slider-next {
-      right: 24px;
-    }
+    .slider-prev { left: 24px; }
+    .slider-next { right: 24px; }
 
     .slider-dots {
       position: absolute;
@@ -513,21 +487,17 @@
     }
 
     .slider-dot {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       padding: 0;
       border: 1px solid #fff;
       border-radius: 50%;
-      background: transparent;
+      background: rgba(0, 0, 0, .3);
       cursor: pointer;
       transition: .2s;
     }
 
-    .slider-dot.active {
-      background: #fff;
-    }
-
-    /* CONTACT */
+    .slider-dot.active { background: #fff; }
 
     .contact-section {
       background: #050505;
@@ -540,8 +510,6 @@
       margin: 0 auto 30px;
       color: #ddd;
     }
-
-    /* FOOTER */
 
     footer {
       background: #000;
@@ -562,34 +530,27 @@
       font-size: 14px;
     }
 
-    /* MOBILE */
-
     @media (max-width: 800px) {
       .container {
         width: min(calc(100% - 30px), 1180px);
       }
 
-      .contact-small {
-        display: none;
-      }
+      .contact-small { display: none; }
 
       .brand {
         font-size: 25px;
         letter-spacing: .12em;
+        white-space: normal;
       }
 
       .enquire-button {
         padding: 7px 15px;
         font-size: 15px;
+        flex-shrink: 0;
       }
 
-      nav .container {
-        gap: 16px 25px;
-      }
-
-      nav a {
-        font-size: 14px;
-      }
+      nav .container { gap: 16px 25px; }
+      nav a { font-size: 14px; }
 
       .hero {
         display: flex;
@@ -608,30 +569,24 @@
       }
 
       .hero h1 {
-        font-size: 65px;
+        font-size: clamp(44px, 10vw, 65px);
       }
 
-      section {
-        padding: 75px 0;
-      }
+      section { padding: 75px 0; }
 
       .tour-row {
         grid-template-columns: 1fr;
         gap: 5px;
       }
 
-      .tour-note {
-        text-align: left;
-      }
+      .tour-note { text-align: left; }
 
       .deposit-grid {
         grid-template-columns: 1fr;
         gap: 50px;
       }
 
-      .tour-slider-section {
-        padding: 0;
-      }
+      .tour-slider-section { padding: 0; }
 
       .tour-slider {
         height: 66vh;
@@ -644,22 +599,23 @@
         font-size: 30px;
       }
 
-      .slider-prev {
-        left: 12px;
-      }
-
-      .slider-next {
-        right: 12px;
-      }
+      .slider-prev { left: 12px; }
+      .slider-next { right: 12px; }
 
       .slider-label {
         top: 20px;
         font-size: 10px;
       }
 
-      .footer-brand {
-        font-size: 29px;
-      }
+      .footer-brand { font-size: 29px; }
+
+      .rate-table td { font-size: 16px; }
+      .rate-table td:last-child { font-size: 21px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .tour-slide { transition: none; }
     }
   </style>
 </head>
@@ -695,7 +651,6 @@
       <div class="hero-copy">
         <div class="hero-inner">
           <div class="eyebrow">Sydney • Australia</div>
-
           <h1>Private<br>Companionship</h1>
 
           <p>
@@ -737,8 +692,8 @@
             technology and travel.
           </p>
           <p>
-            Discretion, privacy and respectful communication are
-            prioritised at all times.
+            Discretion, privacy and respectful communication
+            are prioritised at all times.
           </p>
         </div>
       </div>
@@ -763,32 +718,8 @@
 
         <div class="tour-list">
           <div class="tour-row">
-            <div class="tour-city">Tamworth</div>
-            <div class="tour-date">17–21 August</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
-
-          <div class="tour-row">
-            <div class="tour-city">Dubbo</div>
-            <div class="tour-date">15–17 September</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
-
-          <div class="tour-row">
-            <div class="tour-city">Wagga Wagga</div>
-            <div class="tour-date">6–8 October</div>
-            <div class="tour-note">
-              Arrival and departure outside advertised dates
-            </div>
-          </div>
-
-          <div class="tour-row">
             <div class="tour-city">Mudgee</div>
-            <div class="tour-date">13–15 October</div>
+            <div class="tour-date">20–22 October 2026</div>
             <div class="tour-note">
               Arrival and departure outside advertised dates
             </div>
@@ -796,23 +727,31 @@
 
           <div class="tour-row">
             <div class="tour-city">Coffs Harbour</div>
-            <div class="tour-date">10–12 November</div>
+            <div class="tour-date">10–12 November 2026</div>
+            <div class="tour-note">
+              By appointment only — securing times now
+            </div>
+          </div>
+
+          <div class="tour-row">
+            <div class="tour-city">Dubbo</div>
+            <div class="tour-date">24–26 November 2026</div>
             <div class="tour-note">
               Arrival and departure outside advertised dates
             </div>
           </div>
 
           <div class="tour-row">
-            <div class="tour-city">Albury</div>
-            <div class="tour-date">17–19 November</div>
+            <div class="tour-city">Port Macquarie</div>
+            <div class="tour-date">1–3 December 2026</div>
             <div class="tour-note">
               Arrival and departure outside advertised dates
             </div>
           </div>
 
           <div class="tour-row">
-            <div class="tour-city">Ulladulla</div>
-            <div class="tour-date">8–10 December</div>
+            <div class="tour-city">Tamworth</div>
+            <div class="tour-date">10–12 February 2027</div>
             <div class="tour-note">
               Arrival and departure outside advertised dates
             </div>
@@ -826,7 +765,6 @@
             as these locations are visited regularly and are not
             always listed as formal tours.
           </p>
-
           <p>
             <strong>
               Tour dates with confirmed pre-bookings are always
@@ -835,23 +773,22 @@
             Dates without confirmed pre-bookings remain subject
             to modification or cancellation.
           </p>
-
           <p>
             Touring rates within New South Wales remain identical
             to my advertised rates. Outside New South Wales,
             rates may be adjusted and will be published accordingly.
           </p>
-
           <p>
             Short-notice bookings are welcome where possible;
             however, immediate availability is frequently limited
             to digital engagements.
           </p>
-
           <p>
             A minimum of <strong>24–48 hours' notice</strong>
             is recommended for in-person appointments, with
-            <strong>at least 48 hours strongly recommended for tours.</strong>
+            <strong>
+              at least 48 hours strongly recommended for tours.
+            </strong>
           </p>
         </div>
       </div>
@@ -875,8 +812,6 @@
           </p>
         </div>
 
-        <!-- INCALL -->
-
         <h3 class="rate-heading">Incall</h3>
 
         <table class="rate-table" aria-label="Incall rates">
@@ -888,88 +823,36 @@
               </td>
               <td>AUD $650</td>
             </tr>
-            <tr>
-              <td>1 hour</td>
-              <td>AUD $950</td>
-            </tr>
-            <tr>
-              <td>2 hours</td>
-              <td>AUD $1,900</td>
-            </tr>
-            <tr>
-              <td>3 hours</td>
-              <td>AUD $2,600</td>
-            </tr>
-            <tr>
-              <td>Additional hours</td>
-              <td>AUD $800</td>
-            </tr>
-            <tr>
-              <td>Couples — 1 hour</td>
-              <td>AUD $1,500</td>
-            </tr>
-            <tr>
-              <td>Overnight — 12 hours</td>
-              <td>AUD $7,000</td>
-            </tr>
+            <tr><td>1 hour</td><td>AUD $950</td></tr>
+            <tr><td>2 hours</td><td>AUD $1,900</td></tr>
+            <tr><td>3 hours</td><td>AUD $2,600</td></tr>
+            <tr><td>Additional hours</td><td>AUD $800</td></tr>
+            <tr><td>Couples — 1 hour</td><td>AUD $1,500</td></tr>
+            <tr><td>Overnight — 12 hours</td><td>AUD $7,000</td></tr>
           </tbody>
         </table>
-
-        <!-- OUTCALL -->
 
         <h3 class="rate-heading">Outcall</h3>
 
         <table class="rate-table" aria-label="Outcall rates">
           <tbody>
-            <tr>
-              <td>1 hour</td>
-              <td>AUD $950</td>
-            </tr>
-            <tr>
-              <td>2 hours</td>
-              <td>AUD $1,900</td>
-            </tr>
-            <tr>
-              <td>3 hours</td>
-              <td>AUD $2,600</td>
-            </tr>
-            <tr>
-              <td>Additional hours</td>
-              <td>AUD $800</td>
-            </tr>
-            <tr>
-              <td>Couples — 1 hour</td>
-              <td>AUD $1,500</td>
-            </tr>
-            <tr>
-              <td>Overnight — 12 hours</td>
-              <td>AUD $7,000</td>
-            </tr>
+            <tr><td>1 hour</td><td>AUD $950</td></tr>
+            <tr><td>2 hours</td><td>AUD $1,900</td></tr>
+            <tr><td>3 hours</td><td>AUD $2,600</td></tr>
+            <tr><td>Additional hours</td><td>AUD $800</td></tr>
+            <tr><td>Couples — 1 hour</td><td>AUD $1,500</td></tr>
+            <tr><td>Overnight — 12 hours</td><td>AUD $7,000</td></tr>
           </tbody>
         </table>
-
-        <!-- DIGITAL -->
 
         <h3 class="rate-heading">Video Calls &amp; Digital</h3>
 
         <table class="rate-table" aria-label="Video call and digital rates">
           <tbody>
-            <tr>
-              <td>Video call — 5 minutes</td>
-              <td>AUD $150</td>
-            </tr>
-            <tr>
-              <td>Video call — 10 minutes</td>
-              <td>AUD $200</td>
-            </tr>
-            <tr>
-              <td>Video call — 15 minutes</td>
-              <td>AUD $250</td>
-            </tr>
-            <tr>
-              <td>Video call — 30 minutes</td>
-              <td>AUD $400</td>
-            </tr>
+            <tr><td>Video call — 5 minutes</td><td>AUD $150</td></tr>
+            <tr><td>Video call — 10 minutes</td><td>AUD $200</td></tr>
+            <tr><td>Video call — 15 minutes</td><td>AUD $250</td></tr>
+            <tr><td>Video call — 30 minutes</td><td>AUD $400</td></tr>
             <tr>
               <td>
                 PPV
@@ -999,19 +882,16 @@
               AUD $200 late-hours fee.
             </strong>
           </p>
-
           <p>
             Extended travel may incur an additional travel fee
             depending on distance and location.
           </p>
-
           <p>
             <strong>
-              Advertised rates are firm. Discounts are not
-              offered to repeat or returning clients.
+              Advertised rates are firm. Discounts are not offered
+              to repeat or returning clients.
             </strong>
           </p>
-
           <p>
             Please enquire directly for digital engagement
             inclusions and custom content rates.
@@ -1033,22 +913,10 @@
 
             <table class="deposit-table">
               <tbody>
-                <tr>
-                  <td>1 hour</td>
-                  <td>$300</td>
-                </tr>
-                <tr>
-                  <td>2 hours</td>
-                  <td>$600</td>
-                </tr>
-                <tr>
-                  <td>3+ hour engagements</td>
-                  <td>$600+</td>
-                </tr>
-                <tr>
-                  <td>Interstate touring</td>
-                  <td>$300–$600+</td>
-                </tr>
+                <tr><td>1 hour</td><td>$300</td></tr>
+                <tr><td>2 hours</td><td>$600</td></tr>
+                <tr><td>3+ hour engagements</td><td>$600+</td></tr>
+                <tr><td>Interstate touring</td><td>$300–$600+</td></tr>
                 <tr>
                   <td>Overnight arrangements</td>
                   <td>Confirmed on enquiry</td>
@@ -1064,40 +932,34 @@
               <strong>A deposit is required to secure all bookings.</strong>
               Deposits are non-refundable unless otherwise agreed.
             </p>
-
             <p>
               Deposits confirm genuine and committed arrangements,
               support personal safety and security, and contribute
               towards operational costs incurred when arranging
               and reserving an appointment.
             </p>
-
             <p>
               Accepted deposit methods include
               <strong>PayID, Beem It, cryptocurrency or gift card</strong>
               at my discretion.
             </p>
-
             <p>
-              Clients particularly concerned about discretion
-              are encouraged to arrange cryptocurrency or
-              purchase a suitable gift card.
+              Clients particularly concerned about discretion are
+              encouraged to arrange cryptocurrency or purchase
+              a suitable gift card.
             </p>
-
             <p>
               PayID details are not associated with my professional
               services and may be supplied using an email address
               or a separate mobile number that is not used for
               booking enquiries.
             </p>
-
             <p>
               The remaining balance is settled discreetly
               <strong>in cash upon meeting.</strong>
               Please ensure sufficient cash is available for
               any agreed extensions or additional charges.
             </p>
-
             <p>
               ATM withdrawal limits may restrict larger withdrawals.
               Please organise sufficient cash in advance and allow
@@ -1112,15 +974,13 @@
                 Payment is a material condition of the booking
                 and of my agreement to provide the services arranged.
               </p>
-
               <p>
                 Consent to sexual services is given on the basis
                 of the agreed arrangement, including payment of
-                the agreed fee. I do not consent to services
-                being obtained through deliberate deception,
-                fraud or intentional non-payment.
+                the agreed fee. I do not consent to services being
+                obtained through deliberate deception, fraud
+                or intentional non-payment.
               </p>
-
               <p>
                 <strong>
                   Any outstanding debt will be actively pursued
@@ -1129,9 +989,9 @@
                 Where payment cannot be recovered directly,
                 the matter may be pursued through appropriate
                 civil proceedings. Where circumstances involve
-                suspected fraud, deception or other criminal
-                conduct, the matter may also be dealt with
-                through the appropriate criminal process.
+                suspected fraud, deception or other criminal conduct,
+                the matter may also be dealt with through the
+                appropriate criminal process.
               </p>
             </div>
           </div>
@@ -1151,20 +1011,17 @@
           permits. However, “available now” is frequently
           limited to digital engagements.
         </p>
-
         <p>
           I recommend allowing a minimum of
           <strong>24–48 hours' notice</strong> wherever possible.
           For touring appointments,
           <strong>48 hours' notice is strongly recommended.</strong>
         </p>
-
         <p>
           I work late at night and early in the morning where
           arranged. Dawn appointments can also be organised
           with advance notice, particularly while touring.
         </p>
-
         <p>
           Due to demand, availability between approximately
           <strong>3:30 PM and midnight</strong> can be limited,
@@ -1185,14 +1042,17 @@
     <!-- TOUR MEDIA SLIDER -->
 
     <section class="tour-slider-section">
-      <div class="tour-slider" id="tourSlider">
+      <div
+        class="tour-slider"
+        id="tourSlider"
+        role="region"
+        aria-label="Touring photo and video gallery"
+        tabindex="0"
+      >
         <div class="slider-label">Selected moments from touring</div>
 
         <div class="tour-slide active">
-          <img
-            src="IMG_4544.jpeg"
-            alt="Regional New South Wales"
-          >
+          <img src="IMG_4544.jpeg" alt="Regional New South Wales">
         </div>
 
         <div class="tour-slide">
@@ -1202,10 +1062,7 @@
         </div>
 
         <div class="tour-slide">
-          <img
-            src="IMG_6055.jpeg"
-            alt="Regional touring"
-          >
+          <img src="IMG_6055.jpeg" alt="Regional touring">
         </div>
 
         <div class="tour-slide">
@@ -1218,6 +1075,24 @@
           <img
             src="IMG_6064.jpeg"
             alt="Regional New South Wales touring"
+          >
+        </div>
+
+        <!-- NEW PORTRAIT PHOTO -->
+
+        <div class="tour-slide portrait">
+          <img
+            src="IMG_0907.jpeg"
+            alt="Mirror portrait in a white robe"
+          >
+        </div>
+
+        <!-- NEW POOL PHOTO -->
+
+        <div class="tour-slide">
+          <img
+            src="IMG_0922%20(1).jpeg"
+            alt="Relaxing beside an indoor pool overlooking the harbour"
           >
         </div>
 
@@ -1235,42 +1110,7 @@
           onclick="changeTourSlide(1)"
         >›</button>
 
-        <div class="slider-dots">
-          <button
-            class="slider-dot active"
-            type="button"
-            aria-label="Slide 1"
-            onclick="goToTourSlide(0)"
-          ></button>
-
-          <button
-            class="slider-dot"
-            type="button"
-            aria-label="Slide 2"
-            onclick="goToTourSlide(1)"
-          ></button>
-
-          <button
-            class="slider-dot"
-            type="button"
-            aria-label="Slide 3"
-            onclick="goToTourSlide(2)"
-          ></button>
-
-          <button
-            class="slider-dot"
-            type="button"
-            aria-label="Slide 4"
-            onclick="goToTourSlide(3)"
-          ></button>
-
-          <button
-            class="slider-dot"
-            type="button"
-            aria-label="Slide 5"
-            onclick="goToTourSlide(4)"
-          ></button>
-        </div>
+        <div class="slider-dots" id="tourDots"></div>
       </div>
     </section>
 
@@ -1286,7 +1126,6 @@
           Text message is generally the quickest way to reach me.
           I do not take phone calls.
         </p>
-
         <p>
           When making an enquiry, please include your name,
           preferred date, preferred time, booking duration,
@@ -1304,30 +1143,55 @@
     </div>
   </footer>
 
-  <!-- SLIDER JAVASCRIPT -->
+  <!-- SLIDESHOW JAVASCRIPT -->
 
   <script>
+    const tourSlider = document.getElementById("tourSlider");
+    const tourSlides = Array.from(
+      tourSlider.querySelectorAll(".tour-slide")
+    );
+    const dotsContainer = document.getElementById("tourDots");
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
     let currentTourSlide = 0;
-
-    const tourSlides = document.querySelectorAll(".tour-slide");
-    const tourDots = document.querySelectorAll(".slider-dot");
-
     let tourSliderTimer;
+    let pointerInside = false;
+    let focusInside = false;
+
+    const tourDots = tourSlides.map(function (_, index) {
+      const dot = document.createElement("button");
+
+      dot.type = "button";
+      dot.className = "slider-dot";
+      dot.setAttribute("aria-label", "Show slide " + (index + 1));
+
+      dot.addEventListener("click", function () {
+        goToTourSlide(index);
+      });
+
+      dotsContainer.appendChild(dot);
+      return dot;
+    });
 
     function showTourSlide(index) {
       const oldIndex = currentTourSlide;
       const total = tourSlides.length;
 
+      if (!total) return;
+
       index = (index + total) % total;
 
-      tourSlides.forEach(function (slide) {
+      tourSlides.forEach(function (slide, slideIndex) {
         slide.classList.remove("active", "previous");
+        slide.setAttribute(
+          "aria-hidden",
+          slideIndex === index ? "false" : "true"
+        );
 
         const video = slide.querySelector("video");
-
-        if (video) {
-          video.pause();
-        }
+        if (video) video.pause();
       });
 
       if (oldIndex !== index) {
@@ -1336,23 +1200,42 @@
 
       currentTourSlide = index;
 
-      const current = tourSlides[currentTourSlide];
-
+      const current = tourSlides[index];
       current.classList.remove("previous");
       current.classList.add("active");
 
-      tourDots.forEach(function (dot) {
-        dot.classList.remove("active");
+      tourDots.forEach(function (dot, dotIndex) {
+        const active = dotIndex === index;
+        dot.classList.toggle("active", active);
+        dot.setAttribute("aria-current", active ? "true" : "false");
       });
 
-      tourDots[currentTourSlide].classList.add("active");
+      const video = current.querySelector("video");
 
-      const currentVideo = current.querySelector("video");
+      if (video && !document.hidden) {
+        try {
+          video.currentTime = 0;
+        } catch (_) {}
 
-      if (currentVideo) {
-        currentVideo.currentTime = 0;
-        currentVideo.play().catch(function () {});
+        video.play().catch(function () {});
       }
+    }
+
+    function restartTourTimer() {
+      clearInterval(tourSliderTimer);
+
+      if (
+        reducedMotion.matches ||
+        document.hidden ||
+        pointerInside ||
+        focusInside
+      ) {
+        return;
+      }
+
+      tourSliderTimer = setInterval(function () {
+        showTourSlide(currentTourSlide + 1);
+      }, 5000);
     }
 
     function changeTourSlide(direction) {
@@ -1365,26 +1248,56 @@
       restartTourTimer();
     }
 
-    function restartTourTimer() {
-      clearInterval(tourSliderTimer);
-
-      tourSliderTimer = setInterval(function () {
-        showTourSlide(currentTourSlide + 1);
-      }, 5000);
-    }
-
-    showTourSlide(0);
-    restartTourTimer();
-
-    const tourSlider = document.getElementById("tourSlider");
-
     tourSlider.addEventListener("mouseenter", function () {
-      clearInterval(tourSliderTimer);
+      pointerInside = true;
+      restartTourTimer();
     });
 
     tourSlider.addEventListener("mouseleave", function () {
+      pointerInside = false;
       restartTourTimer();
     });
+
+    tourSlider.addEventListener("focusin", function () {
+      focusInside = true;
+      restartTourTimer();
+    });
+
+    tourSlider.addEventListener("focusout", function (event) {
+      focusInside = tourSlider.contains(event.relatedTarget);
+      restartTourTimer();
+    });
+
+    tourSlider.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        changeTourSlide(-1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        changeTourSlide(1);
+      }
+    });
+
+    document.addEventListener("visibilitychange", function () {
+      restartTourTimer();
+
+      const video = tourSlides[currentTourSlide].querySelector("video");
+
+      if (video) {
+        if (document.hidden) {
+          video.pause();
+        } else {
+          video.play().catch(function () {});
+        }
+      }
+    });
+
+    reducedMotion.addEventListener("change", restartTourTimer);
+
+    showTourSlide(0);
+    restartTourTimer();
   </script>
 </body>
 </html>
